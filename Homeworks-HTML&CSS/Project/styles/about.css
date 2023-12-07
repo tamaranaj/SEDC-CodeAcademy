@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(../images/background_pattern2_1200.jpg);
+    background-color: rgb(87, 121, 87); 
+    background-repeat: repeat;
+    
+}
+
+.first-navbar{
+    background-color: rgba(166, 241, 216, 0.295);
+    border-radius: 20%;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.logo{
+    display: flex;
+    border: 1px solid blue;
+    
+}
+.first-navigation, .first-navigation-list, .second-navigation, .second-navigation-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.first-navigation-list>li, .second-navigation-list>li{
+    background-color: rgba(222, 159, 180, 0.409);
+    border: 1px solid rgba(14, 138, 97, 0.324);
+    border-radius: 5%;
+    padding: 1em;
+    margin: 10px;
+    list-style: none;
+
+}
+
+.first-navigation-list>li>a{
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+.second-navigation-list>li>a{
+    text-decoration: none;
+    font: smaller Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.second-navbar{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+a:link{
+    color: rgb(130, 85, 203);
+}
+a:visited{
+    color: rgb(154, 38, 150);
+}
+
+
+h1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font: 2em Roboto, sans-serif italic ;
+    color: rgb(82, 64, 64);
+    text-decoration: underline;
+    padding: 3px;
+    margin: 5px;
+    background-color: rgba(222, 159, 180, 0.413);
+}
+
+
+
+#topic{
+    padding: 1px;
+    margin: 2px;
+    margin-top: 0px;
+    background-color: rgba(232, 243, 181, 0.6);
+    text-align: center;
+}
+summary{
+    font: 1em Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    color: rgb(2, 77, 14);
+    margin-bottom: 0px;
+    border-radius: 20%;
+    
+}
+
+#ourHistory{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.history{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 70px;
+    
+}
+
+.image{
+    width: 350px;
+    margin: 15px;
+    
+}
+
+.youtube, iframe{
+    width: 360px;
+    margin: 15px;
+}
+
+.imgParagraph, .youtubeParagraph{
+    padding: 5px;
+    margin: 15px;
+    background-color: rgba(232, 243, 181, 0.6);
+    text-align: center;
+    font: 1em Roboto, sans-serif ;
+    color: rgb(34, 33, 33);
+    font-weight: 500;
+    border-radius: 10%;
+}
+
+h2{
+    margin: 20px 15px;
+    padding: 10px;
+    font-family: Roboto, sans-serif;
+    color: rgb(202, 123, 87);
+    background-color: rgba(130, 86, 191, 0.311);
+    text-align: center;
+}
+
+#products{
+    padding: 20px;
+}
+
+
+.produkti{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}
+
+.productParagraph{
+    padding: 30px 0px;
+    display: flex;
+    margin: 15px;
+    background-color: rgba(232, 243, 181, 0.6);
+    font: 1em Roboto, sans-serif;
+    font-weight: 500;
+    color: rgb(34, 33, 33);
+    border-radius: 10%;
+}
+
+.product-image{
+    padding: 0px 10px;
+}
+
+
+#locations{
+    display: flex;
+    justify-content: center;
+}
+
+#contact{
+    padding: 20px;
+    margin: 2px;
+    margin-top: 0px;
+    background-color: rgba(212, 222, 159, 0.6);
+    text-align: center;
+}
+
+
+.list, .contact-list{
+    text-align: center;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    color: rgb(162, 0, 255);
+    
+}
+#contact p{
+    font-family: Roboto, sans-serif;
+}
+
+.contact-list > li{
+    list-style: none;
+    
+}
+
+.contact-list>li>a{
+    text-decoration: none;
+    color: rgb(209, 19, 177);
+}
+
+span{
+    width: 25px;
+}
+
+#hours{
+    display: flex;
+    justify-content: center;
+}
+
+.working-table {
+    width: 50%;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    background-color: rgba(180, 195, 81, 0.288);
+    
+}
+tr, td{
+    width: 50%;
+}
+tr:hover{
+    background-color: rgb(156, 206, 140);
+    text-align: center;
+}
+
+caption {
+    padding: 15px;
+    background-color: rgba(152, 50, 186, 0.454);
+    font: 1em bolder 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social{
+    position: fixed;
+    left: 0;
+    bottom: 30%;
+}
+
+.media{
+    display: inline-flex;
+    flex-direction: column;
+}
+footer{
+    padding: 5px;
+    background-color: rgba(130, 86, 191, 0.311);
+    text-align: center;
+}
+
+
+
+.backToTop{
+    padding: 0px 10px;
+    background-color: aliceblue;
+}
+
+

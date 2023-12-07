@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(87, 121, 87); 
+}
+
+
+.container{
+    background-color: rgb(161, 213, 196);
+    padding: 20px;
+    margin: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar, .navigation-list, .search-form{
+    display: flex;
+}
+
+.navigation-list>li{
+    display: inline-block;
+    margin: 10px;
+    border: 5px solid skyblue;
+}
+
+.navigation-list>li>a{
+    text-decoration: none;
+    font-family: DM Serif Display, sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+
+a:link{
+    color: rgb(123, 100, 160);
+}
+a:visited{
+    color: rgb(154, 38, 150);
+}
+
+label{
+    text-decoration: none;
+    font-family: DM Serif Display, sans-serif;
+    color: rgb(123, 100, 160);
+}
+    
+.search-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-input:focus{
+    border: 5px double rgb(65, 64, 64);
+    cursor: pointer;
+}
+
+button:active{
+    font-size: medium;
+    background-color: rgb(197, 126, 126);
+}
+button:hover{
+    background-color: rgb(145, 63, 4);
+}
+
+h1{
+    font: 3em DM Serif Display, sans-serif;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(222, 159, 180);
+}
+
+.main{
+    background-color: rgb(185, 201, 185); 
+    padding: 5px;
+    margin: 5px;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+figure{
+    width: 300px;
+}
+
+figure>a{
+    border: 5px double blue;
+    display: inline-block;
+    
+}
+
+
+
+.paragraphs>p{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    margin: 18px;
+    border: 2px dotted rgb(75, 109, 6);
+    padding: 5px;
+    
+}
+
+
+
+.footer{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    background-color: rgb(161, 213, 196);
+    
+}
+.audio{
+    display: inline-block;
+    margin: 20px;
+}
+
+

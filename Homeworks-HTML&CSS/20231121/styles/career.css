@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(180, 195, 81, 0.676);
+}
+
+
+header{
+    background-color: rgb(161, 213, 196);
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 0px;
+}
+
+.first-navbar,.first-navigation, .first-navigation-list{
+    display: inline-block;
+}
+
+.first-navigation-list>li{
+    display: inline-block;
+    margin: 10px;
+}
+
+.first-navigation-list>li>a{
+    text-decoration: none;
+    font-family: DM Serif Display, sans-serif;
+    
+}
+
+a:link{
+    color: rgb(147, 115, 200);
+}
+a:visited{
+    color: rgb(125, 15, 28);
+}
+
+h3{
+    font: 2em DM Serif Display, sans-serif italic ;
+    color: rgb(82, 64, 64);
+    text-align: center;
+    text-decoration: underline;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(222, 159, 180);
+    font-family: DM Serif Display, sans-serif;
+}
+
+.form-div, form{
+    display: inline-block;   
+}
+
+.info label, .cv label{
+    padding: 2em;
+}
+
+.info input, .job-positions input, .cv input{
+    padding-left: 0.5em;
+    margin: 0.5em;
+    
+    
+}
+
+fieldset, legend, footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(11, 11, 167);
+}

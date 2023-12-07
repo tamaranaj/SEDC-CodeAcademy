@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../images/background_pattern2_1200.jpg);
+    background-color: rgb(87, 121, 87); 
+    background-repeat: repeat;
+}
+
+.navbar{
+    background-color: rgba(166, 241, 216, 0.295);
+    border-radius: 20%;
+    padding: 20px 5px;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logo{
+    display: flex;
+    border: 1px solid blue;
+    
+}
+
+.navigation, .navigation-list, .search-form{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.navigation-list>li{
+    background-color: rgba(222, 159, 180, 0.409);
+    border: 1px solid rgba(14, 138, 97, 0.324);
+    border-radius: 5%;
+    padding: 1em;
+    margin: 10px;
+    list-style: none;
+
+}
+
+.navigation-list>li>a{
+    text-decoration: none;
+    font-family: DM Serif Display, sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+a:link{
+    color: rgb(130, 85, 203);
+}
+
+a:visited{
+    color: rgb(154, 38, 150);
+}
+
+label{
+    text-decoration: none;
+    font-family: DM Serif Display, sans-serif;
+    color: rgb(130, 85, 203);
+}
+
+.search-form{
+    border: 1px solid rgba(14, 138, 97, 0.324);
+    border-radius: 5%;
+    padding: 1em;
+    text-align: center;
+    margin: 10px;
+}
+
+.search-input:focus{
+    border: 5px double rgb(65, 64, 64);
+    cursor: pointer;
+}
+
+button:active{
+    font-size: medium;
+    background-color: rgb(197, 126, 126);
+}
+
+button:hover{
+    background-color: rgb(218, 145, 93);
+}
+
+h1{
+    text-align: center;
+    font: 3em DM Serif Display, sans-serif;
+    color: rgb(56, 55, 58);
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(222, 159, 180, 0.409);
+    border-radius: 20%;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.main{
+    background-color: rgba(185, 201, 185, 0.235); 
+    padding: 30px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.img-div{
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: flex-end;
+    margin: 20px;
+}
+
+.img-div>a{
+    border: 5px double rgb(54, 1, 71);
+}
+
+.paragraphs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.paragraphs>p{
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+    margin: 8px 0px;
+    border: 2px dotted rgb(75, 109, 6);
+    padding: 5px;
+}
+
+.paragraphs>p::first-letter{
+    font: 30px DM Serif Display, sans-serif ;
+}
+
+abbr{
+    color: rgb(34, 0, 255);
+}
+
+.social{
+    position: fixed;
+    left: 0;
+    bottom: 30%;
+}
+.media{
+    display: inline-flex;
+    flex-direction: column;
+}
+.footer{
+    padding: 10px 0px;
+    margin: 5px;
+    background-color: rgba(130, 86, 191, 0.311);
+    border-radius: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+ 
+}
+
+.backToTop{
+    
+    padding: 0px 10px;
+    background-color: aliceblue;
+}
+
+@media only screen and (max-width: 500px){
+
+    body{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .navbar{
+        
+        border-radius: 5%;
+        padding: 5px;
+        margin: 5px;
+        flex-wrap: wrap;
+        
+    }
+    
+    .logo{
+        display: none;
+        
+    }
+    
+    .navigation-list>li{
+        padding: 2px;
+        margin: 10px;   
+    }
+    
+        
+    .search-form{
+        padding: 3%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .search-input:focus{
+        border: 3px double rgb(65, 64, 64);
+    }
+    
+    button:active{
+        display: none;
+    }
+    
+    button:hover{
+        display: none;
+    }
+    
+    h1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font: 2em DM Serif Display, sans-serif;
+        padding: 4px;
+        margin: 5px;
+        border-radius: 10%;
+    }
+    
+    h2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 1em;
+    }
+    
+    .main{
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .img-div{
+        width: 200px;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .image-shop{
+        width: 100%;
+    }
+    
+    .paragraphs{
+        align-items: center;
+    }
+    
+    .paragraphs>p{
+        font-size: 15px;
+        width: 60%;
+        margin: 3px;
+        padding: 0;
+    }
+    
+    .paragraphs>p::first-letter{
+        font: 20px DM Serif Display, sans-serif ;
+    }
+    
+    
+    .social{
+        bottom: 15%;
+    }
+
+    .footer{
+        margin: 0;
+        border-radius: 10%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        
+            
+    }
+}
+
+
+@media only screen and (max-width: 785px){
+    
+        body{
+        width: 100%;
+        
+    }
+    
+    .navbar{
+                
+        padding: 20px 5px;
+        margin: 10px 5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
+    .logo{
+        display: none;
+    }
+    
+    .navigation-list>li{
+        padding: 2px;
+        margin: 10px;   
+    }
+    
+        
+    .search-form{
+        padding: 3%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .search-input:focus{
+        border: 3px double rgb(65, 64, 64);
+    }
+    
+    button:active{
+        display: none;
+    }
+    
+    button:hover{
+        display: none;
+    }
+    
+    h1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font: 2em DM Serif Display, sans-serif;
+        padding: 4px;
+        margin: 5px;
+        border-radius: 10%;
+    }
+    
+    h2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 1em;
+    }
+    
+    .main{
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .img-div{
+        width: 200px;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .image-shop{
+        width: 100%;
+    }
+    
+    .paragraphs{
+        align-items: center;
+    }
+    
+    .paragraphs>p{
+        font-size: 15px;
+        width: 60%;
+        margin: 3px;
+        padding: 0;
+    }
+    
+    .paragraphs>p::first-letter{
+        font: 20px DM Serif Display, sans-serif ;
+    }
+    
+    
+    .social{
+        bottom: 15%;
+    }
+
+    .footer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+     
+    }
+}

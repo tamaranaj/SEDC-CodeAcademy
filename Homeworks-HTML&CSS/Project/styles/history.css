@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(../images/background_pattern2_1200.jpg);
+    background-color: rgb(87, 121, 87); 
+    background-repeat: repeat;
+    
+}
+
+.first-navbar{
+    background-color: rgba(166, 241, 216, 0.295);
+    border-radius: 20%;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.logo{
+    display: flex;
+    border: 1px solid blue;
+    
+}
+.first-navigation, .first-navigation-list, .second-navigation, .second-navigation-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.first-navigation-list>li, .second-navigation-list>li{
+    background-color: rgba(222, 159, 180, 0.409);
+    border: 1px solid rgba(14, 138, 97, 0.324);
+    border-radius: 5%;
+    padding: 1em;
+    margin: 10px;
+    list-style: none;
+
+}
+
+.first-navigation-list>li>a {
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+.second-navigation-list>li>a{
+    text-decoration: none;
+    font: smaller Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.second-navbar{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+a:link{
+    color: rgb(21, 7, 43);
+}
+a:visited{
+    color: rgb(154, 115, 38);
+}
+
+
+#topic{
+    padding: 1px;
+    margin: 2px;
+    margin-top: 0px;
+    background-color: rgba(232, 243, 181, 0.6);
+    text-align: center;
+}
+summary{
+    font: 1em Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    color: rgb(2, 77, 14);
+    margin-bottom: 0px;
+    border-radius: 20%;
+}
+
+h1{
+    
+    text-align: center;
+    font: 3em 'Times New Roman', Times, serif; 
+    color: rgb(56, 55, 58);
+    text-align: center;
+    padding: 20px 0px;
+    margin: 10px;
+    background-color: rgba(222, 159, 180, 0.409);
+    border-radius: 20%;
+}
+
+h2{
+    text-align: center;
+    font: 2em Roboto, sans-serif;
+    padding: 30px 0px 10px;
+    margin: 20px;
+}
+
+
+#importantMoments{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 80px;
+    margin: 10px 20px;
+}
+
+.moments{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 50px;
+
+}
+
+.shop, .factory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop p {
+    margin: 20px;
+    padding: 40px;
+    font: 1em Roboto, sans-serif;
+}
+
+.factory p{
+    padding: 40px 40px 40px 0px;
+    font: 1em Roboto, sans-serif;
+}
+
+#pastries{
+    display: flex;
+    
+}
+
+.pastries{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+
+.pastriesParagraph{
+    margin: 0px 30px;
+    background-color: rgba(255, 228, 196, 0.521);
+    font: 1em Roboto, sans-serif;;
+}
+
+.deserts{
+    display: flex;
+    justify-content: center;
+}
+
+
+#best{
+    display: flex;
+    justify-content: center;
+    margin: 10px 30px;
+}
+
+
+.social{
+    position: fixed;
+    left: 0;
+    bottom: 30%;
+}
+.media{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+footer{
+    padding: 5px;
+    background-color: rgba(130, 86, 191, 0.311);
+    text-align: center;
+}
+
+
+
+.backToTop{
+    padding: 0px 10px;
+    background-color: aliceblue;
+}

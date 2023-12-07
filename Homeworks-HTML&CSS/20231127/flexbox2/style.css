@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    background-color: bisque;
+    
+}
+
+.main{
+    
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border: 3px solid;
+    top: 50px;
+
+}
+
+.first{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.a{
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+.blue{
+    background-color: blue;
+    width: 95px;
+    height: 50px;
+    border-bottom: 5px solid;
+    
+}
+
+.white{
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    border-right: 5px solid;
+    border-bottom: 5px solid; 
+    
+}
+
+
+.red{
+    background-color: red;
+    width: 125px;
+    height: 50px;
+    border-bottom: 5px solid;
+    border-right: 5px solid;
+    
+
+}
+
+.second{
+    display: inline-flex;
+    flex-direction: column;
+    float: right;
+}
+
+.green{
+    background-color: green;
+    width: 25px;
+    height: 300px;
+    border-bottom: 5px solid;
+    border-left: 5px solid;
+    
+}
+
+.yellow{
+    background-color: yellow;
+    width: 25px;
+    height: 95px;
+    border-left: 5px solid;
+    
+}
+
+.third{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+.b{
+    display: inline-flex;
+    flex-direction: column;
+    
+}
+.violet{
+    background-color: violet;
+    width: 50px;
+    height: 105px;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    
+}
+
+.gray{
+    background-color: gray;
+    width: 50px;
+    height: 150px;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    
+
+}
+
+.pink{
+    background-color: pink;
+    width: 50px;
+    height: 90px;
+    border-right: 5px solid;
+    
+}
+
+.lightBlue{
+    background-color: lightblue;
+    height: 195px;
+    width: 195px;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.forth{
+    position: absolute;
+    top: 50px;
+    right: 25px;
+}
+.n{
+    display: inline-flex;
+    flex-direction: column;
+
+}
+.m{
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+.orange{
+    background-color: orange;
+    border-bottom: 5px solid;
+    width: 125px;
+    height: 100px;
+    
+}
+
+
+
+.whiteSmoke{
+    background-color: whitesmoke;
+    border-left: 5px solid;
+    border-bottom: 5px solid;
+    width: 62px;
+    height: 95px;
+    
+}
+
+.dodgerBlue{
+    background-color: dodgerblue;
+    border-bottom: 5px solid;
+    width: 63px;
+    height: 95px;
+    
+}
+
+.brown{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    border-bottom: 5px solid;
+    border-right: 5px solid;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    
+}
+.fifth{
+    position: absolute;
+    bottom: 95px;
+    left: 150px;
+}
+
+.c{
+    display: inline-flex;
+}
+.aqua{
+    background-color: aqua;
+    border-bottom: 5px solid;
+    border-right: 5px solid;
+    width: 95px;
+    height: 52px;
+    
+}
+
+.beige{
+    background-color: beige;
+    border-bottom: 5px solid;
+    width: 125px;
+    height: 50px;
+    
+}
+
+.lightGreen{
+    background-color: lightgreen;
+    border-right: 5px solid;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+}
+
+.coral{
+    background-color: coral;
+    width: 220px;
+    height: 20px;
+    border-top: 5px solid;
+    position: absolute;
+    bottom: 0px;
+    right: 25px;
+
+}
+
+.sixth{
+    position: absolute;
+    bottom: 18px;
+    left: 150px;
+}
+
+.d{
+    display: inline-flex;
+
+
+}
+.e{
+    display: inline-flex;
+    flex-direction: column-reverse;
+}
+.lightYellow{
+    background-color: lightyellow;
+    width: 95px;
+    height: 35px;
+    border-top: 5px solid;
+    border-right: 5px solid;
+    
+}
+
+.lightSeaGreen{
+    background-color: lightseagreen;
+    border-right: 5px solid;
+    width: 95px;
+    height: 46px;
+    
+}
+
+.cyan{
+    background-color: cyan;
+    width: 125px;
+    height: 80px;
+    
+}

@@ -1,0 +1,10 @@
+let enterPrice = prompt("Enter the price of the phone you want to buy");
+let phones = prompt("Enter the number of phones you want to buy");
+alert ("Each phone has 5% tax rate");
+let price = parseInt(enterPrice);
+let phoneNum = parseInt(phones);
+let tax = 0.05;
+let priceWtax = price + ( price * tax );
+alert ("Price with tax for one phone is " + (priceWtax));
+let totalSum = phoneNum * priceWtax;
+alert ("The total sum is " + (totalSum));

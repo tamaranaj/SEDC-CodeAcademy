@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.parent{
+
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+
+/* HORIZONTAL DIV */
+.horisontalTopDiv{
+
+   
+    width: 550px;
+    height: 75px;
+    position: absolute; 
+    display: flex;
+    gap: 8px;
+
+}
+
+.boxOne, .boxTwo, .boxThree{
+    width: 550px;
+    height: 72px;
+
+}
+
+.boxOne{
+  background-color:   rgb(228,238,234);
+}
+
+.boxTwo{
+
+    background-color: rgb(242,230,212);
+}
+
+.boxThree{
+    background-color:rgb(242,200,105) ;
+}
+
+
+/* VERTICAL DIV */
+
+.verticalLeftDiv{
+    
+    width: 70px;
+    height: 520px;
+    position: absolute; 
+    display: flex;
+    gap: 8px;
+    top: 80px;
+    flex-direction: column;
+   
+}
+
+.boxOneV, .boxTwoV, .boxThreeV{
+    width: 65px;
+    height: 550px;
+
+}
+
+.boxOneV{
+  background-color: rgb(242,230,212);
+}
+
+.boxTwoV{
+
+    background-color:  rgb(228,238,234);
+    
+}
+
+.boxThreeV{
+    background-color:rgb(242,200,105) ;
+}
+
+.verticalRightDiv{
+    
+    height: 600px;
+    width: 42px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    top: 0;
+    right: 0;
+}
+
+.boxFourV{
+    background-color: aquamarine;
+    height: 432px;
+}
+.boxFiveV{
+    background-color: rgb(97, 139, 125);
+    height: 163px;
+}
+
+
+
+.firstCenter{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    top: 80px;
+    left: 73px;
+    width: 300px;
+    height: 430px;
+    
+}
+
+.boxOneC{
+    background-color: red;
+    width: 292px;
+    height: 280px;
+}
+.first{
+    display: flex;
+    gap: 8px;
+}
+
+.boxTowC{
+    background-color: rgb(105, 102, 102);
+    width: 133px;
+    height: 147px;
+}
+.second{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+}
+
+.boxThreeC{
+    width: 150px;
+    height: 70px;
+    background-color: beige;
+}
+
+.boxFourC{
+    background-color: white;
+    width: 150px;
+    height: 70px;
+}
+
+.centerSecond{
+    width: 180px;
+    height: 495px;
+    position: absolute;
+    top: 80px;
+    right: 49px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.boxFiveC, .boxEightC, .boxNineC{
+    width: 180px;
+    height: 470px;
+}
+.boxFiveC{
+    background-color: blanchedalmond;
+}
+
+.column{
+    display: flex;
+    gap: 8px;
+    
+}
+
+.boxSixC{
+    background-color: blueviolet;
+    height: 130px;
+    width: 90px;
+}
+
+.boxSevenC{
+    background-color: pink;
+    height: 130px;
+    width: 90px;
+}
+
+.boxEightC{
+    background-color: lightgreen;
+    height: 230px;
+}
+
+.boxNineC{
+    background-color: rgb(115, 0, 255);
+}
+
+.boxOneB{
+    position: absolute;
+    bottom: 0px;
+    right: 48px;
+    background-color: violet;
+    height: 18px;
+    width: 340px;
+}
+
+.boxTwoB{
+    position: absolute;
+    bottom: 0px;
+    right: 394px;
+    background-color: lightskyblue;
+    width: 133px;
+    height: 85px;
+}
+
+.boxThreeB{
+    background-color: lightsteelblue;
+    position: absolute;
+    bottom: 25px;
+    left: 214px;
+    width: 150px;
+    height: 58px;
+}

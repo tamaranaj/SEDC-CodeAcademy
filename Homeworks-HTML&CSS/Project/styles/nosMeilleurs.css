@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../images/background_pattern2_1200.jpg);
+    background-color: rgb(87, 121, 87); 
+    background-repeat: repeat;
+}
+
+.navbar{
+    background-color: rgba(166, 241, 216, 0.295);
+    border-radius: 20%;
+    padding: 20px 5px;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logo{
+    display: flex;
+    border: 1px solid blue;
+    
+}
+
+.navigation, .navigation-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.navigation-list>li{
+    background-color: rgba(222, 159, 180, 0.409);
+    border: 1px solid rgba(14, 138, 97, 0.324);
+    border-radius: 5%;
+    padding: 1em;
+    margin: 10px;
+    list-style: none;
+
+}
+
+.navigation-list>li>a{
+    text-decoration: none;
+    font-family: DM Serif Display, sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+a:link{
+    color: rgb(130, 85, 203);
+}
+
+a:visited{
+    color: rgb(154, 38, 150);
+}
+
+h1{
+    text-align: center;
+    font: 2em 'Times New Roman', Times, serif; 
+    color: rgb(56, 55, 58);
+    text-align: center;
+    padding: 15px 0px;
+    margin: 10px;
+    background-color: rgba(222, 159, 180, 0.409);
+    border-radius: 20%;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
+    padding: 20px;
+}
+.info>p{
+    text-align: center;
+    font: 1em Roboto, sans-serif;
+    margin: 20px;
+    padding: 40px 10px;
+}
+blockquote{
+    text-align: center;
+    font-size: 1em;
+    margin: 20px;
+    padding: 40px 10px;
+}
+
+#recipe{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.ingredients, .ingFrosting, .frosting, .nutrition{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 228, 196, 0.628);
+    border: 2px solid rgba(216, 216, 158, 0.881);
+    border-radius: 20%;
+    text-align: center;
+    font: 1em Roboto, sans-serif;
+}
+.ingredients, .ingFrosting, .list{
+    list-style-position: inside;
+}
+.steps{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 2fr;
+    justify-items: center;
+}
+
+.list, .steps p{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 228, 196, 0.628);
+    border: 2px solid rgba(216, 216, 158, 0.881);
+    border-radius: 30%;
+    text-align: center;
+    font: 1em Roboto, sans-serif;
+    
+}
+h2{
+    
+    text-align: center;
+    font: 2em Roboto sans-serif;
+    padding: 20px 0px  ;
+    margin: 30px;
+    background-color: rgba(222, 159, 180, 0.409);
+    border-radius: 30%;
+    
+}
+
+h3{
+    text-align: center;
+    font: 1.5em Roboto sans-serif;
+    padding: 0px 35px ;
+    margin: 30px;
+    background-color: rgba(222, 159, 180, 0.409);
+    border-radius: 20%;
+}
+
+h4{
+    text-align: center;
+    font: 1em 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    padding: 0px 35px ;
+    margin: 10px;
+}
+
+
+.social{
+    position: fixed;
+    left: 0;
+    bottom: 30%;
+}
+.media{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+footer{
+    padding: 5px;
+    background-color: rgba(130, 86, 191, 0.311);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+
+.backToTop{
+    padding: 0px 10px;
+    background-color: aliceblue;
+}
