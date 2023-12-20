@@ -1,10 +1,12 @@
 //creating for loop
-for(let num = 0; num<=20; num++){
+let result = ""
+for(let num = 1; num<=20; num++){
     if(num % 2 === 0){ //even numbers
-        console.log(num);
-        console.log('\n')
+        result += `${num} \n`
     }else{ //odd numbers
-        console.log(num + "' '");
+        result += `${num} `
     }
 
 }
+
+console.log(result)

@@ -1,11 +1,18 @@
 //creating array
-let numbersArray = [7, 13, 45, 81, 100];
+let numbersArray = [7, 13, 45, 81, 100,"jfhfj", "ass"];
 
 //creating function
 function calculate (array) {
     let sum = 0
     for(let i = 0; i<array.length; i++){
-        sum += array[i];
+        if(typeof(array[i]) === "number"){
+            sum += array[i];  
+        }else{
+            console.log("Invalid number found")
+           
+        }
+
+        
     }
 
     console.log(sum)
@@ -14,19 +21,3 @@ function calculate (array) {
 //calling
 calculate(numbersArray);
 
-
-//BONUS EXERCISE
-function validateNumber(array, num){
-    
-    for(let i=0; i<array.length; i++){
-        if(array[i] === num){
-            console.log(`The number ${num} is valid`);
-            return num; //proveruva dali nekoj item od niza e ednakov so baraniot broj
-        }
-    }
-    console.log(`There is no ${num} in the list!`);
-    
-
-}
-
-validateNumber(numbersArray, 150);
