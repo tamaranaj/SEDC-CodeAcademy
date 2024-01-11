@@ -1,0 +1,45 @@
+html{
+ box-sizing: border-box;
+}
+body{
+    background-color: rgb(108, 173, 55);
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    color: rgb(221, 205, 181);
+}
+
+.gameContainer{
+    background-color: rgba(126, 146, 109, 0.282);
+    /* width: 50vw; */
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+
+.alphabet{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.cities{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hint, .playAgain{
+    width: 10vw;
+    height: 5vh;
+    font-weight: 400;
+    background-color: rgb(221, 205, 181);;
+}

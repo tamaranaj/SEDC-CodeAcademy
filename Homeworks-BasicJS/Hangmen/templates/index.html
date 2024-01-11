@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hangmen Game</title>
+    
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <h1>HANGMEN</h1>
+    <div id="gameContainer" class="gameContainer">
+        <div id="question" class="question">
+            <h3>VANILLA JAVASCRIPT HANGMEN GAME</h3>
+            <h5>
+            Use the alphabet below to guess the word, or click hint to get a clue.
+            </h5>
+        </div>
+        <div id="alphabet" class="alphabet">
+        </div>   
+        <div id="chosenCategory" class="chosenCategory">
+            <h5>The category is cities in Europe!</h5>
+
+            <div id="cities" class="cities">
+            </div>
+        </div>
+
+      <p id="lives" class="lives">
+        <b>You have 6 lives.</b>
+      </p>
+
+        <div id="clue" class="clue" >
+        </div>
+
+      <div id="boxContainer">
+            <div id="boxHangmen" class="boxHangmen">
+              <img src="../pictures/1.png" alt="Hanging man" width="400" height = "190"></img>
+            </div>
+            
+           <div class="btns">
+            <button id="hint" class="hint">Hint</button>
+            <button id="playAgain" class="playAgain">Play Again</button>
+           </div>
+            
+      </div>
+    </div>
+
+   
+    <script src="../src/app.js"></script>
+  </body>
+</html>
