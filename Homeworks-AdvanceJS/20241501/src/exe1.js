@@ -63,8 +63,13 @@ addBtn.addEventListener("click", function(event){
 
 showBtn.addEventListener("click", function(event){
     event.preventDefault()
+    //prevent creating table if array is empty
+    if(reminderArray.length<1){
+        return
+    }
+    
     divTable.innerHTML = ""
-    divTable.innerHTML +=`<table id ="table" border=1></table>`
+    divTable.innerHTML +=`<table id ="table" border=1><caption>List of reminders</caption></table>`
     let table = document.getElementById("table")
     createTable(reminderArray,table)
 })
@@ -76,5 +81,6 @@ function createTable(array,element){
         <td>${item.priority}</td>
         <td>${item.description}</td>`
     }
-    return
+    
 }
+
