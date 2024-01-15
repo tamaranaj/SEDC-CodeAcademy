@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 1</title>
+    <link rel="stylesheet" href="../style/exe1.css">
+</head>
+<body>
+    <h2>Reminder</h1>
+
+    <form>
+        
+        <label for="titleInput">Enter title:</label>
+        <input type="text" name="title" id="titleInput" placeholder="Enter title..">
+        <label for="priorityInput">Enter the priority:</label>
+        <select id="priorityInput" >
+            <option value="">Choose priority</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <label for="colorInput">Enter color:</label>
+        <input type="color" name="color" id="colorInput">
+        <label for="textareaInput">Enter description for title:</label>
+        <textarea name="description" id="textarea" cols="30" rows="5" placeholder="Enter description.."></textarea>
+        <br>
+        <button id="addBtn">Add new reminder</button>
+       
+        <button id="showBtn">Show all reminders</button>
+
+    </form>
+    <br>
+    <div id="table-container"></div>
+
+    <script src="../src/exe1.js"></script>
+</body>
+</html>

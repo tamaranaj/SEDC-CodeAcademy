@@ -9,13 +9,21 @@ let btn = document.getElementsByTagName("button")[0]
 let divStory = document.getElementById("story")
 
 btn.addEventListener("click", function(){
+    if(!input1.value || !input2.value || !input3.value){
+        console.log("Please enter valid inputs")
+        return
+    }
+
     divStory.innerHTML = ''
     divStory.innerHTML += `<p>This is the story created by you: ${storyTeller(input1.value, input2.value, input3.value)}</p>`;
     
+    input1.value = ""
+    input2.value = ""
+    input3.value = ""
+    
 })
 function storyTeller(who, what, when){
-    
-    return who + " " + what + " " + when + ".";
+    return `${who} ${what} ${when}.`
 }
 
 
