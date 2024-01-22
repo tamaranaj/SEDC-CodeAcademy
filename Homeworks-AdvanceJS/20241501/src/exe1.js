@@ -36,19 +36,15 @@ reminderArray=[]
 addBtn.addEventListener("click", function(event){
     event.preventDefault()
 
-    //title and priority are required
     let title = titleInput.value
-    if(!title){
-        alert("You must enter title")
-        return
-    }
     let priority = priorityInput.value
-    if(!priority){
-        alert("Enter priority")
-        return
-    }
     let color = colorInput.value
     let description = textarea.value ? textarea.value : "no description needed"
+
+    //title and priority are required
+    if(!validateInputs(title) || !validateInputs(priority)){
+        return
+    }
     
     let reminder = new Reminder(title, priority, color, description)
     reminderArray.push(reminder)
@@ -84,3 +80,12 @@ function createTable(array,element){
     
 }
 
+function validateInputs(input){
+    let flag = true
+    if(!input){
+        alert("You must enter value for title and priority")
+        flag = false
+        return 
+    }
+    return flag
+}

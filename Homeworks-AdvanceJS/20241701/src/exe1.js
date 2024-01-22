@@ -20,12 +20,7 @@ fetch("http://api.open-notify.org/astros.json")
 
             callApiBtn.addEventListener("click", function(event){
                 event.preventDefault()
-                astroList.innerText = ""
-                for(let i=0; i<data.people.length; i++){
-                    let listItem = document.createElement("li")
-                    listItem.textContent = `${data.people[i].name}`
-                    astroList.appendChild(listItem)
-                }
+                createList(data.people, astroList)
             })
         })
         .catch(function(response){
@@ -33,7 +28,20 @@ fetch("http://api.open-notify.org/astros.json")
             console.log(response) 
         })
     })
-    .catch(function(response){
+    .catch(function(error){
         console.log("An error ocurred");
-        console.log(response)
+        console.log(error)
     })
+
+
+
+function createList(array,element){
+    element.innerText = ""
+    for(let i=0; i<array.length; i++){
+        let listItem = document.createElement("li")
+        listItem.innerText = `${array[i].name}`
+        element.appendChild(listItem)
+        
+    }
+}
+
