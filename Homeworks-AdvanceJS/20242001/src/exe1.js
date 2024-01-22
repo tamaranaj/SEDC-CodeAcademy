@@ -11,6 +11,7 @@
 let table = document.getElementById("tablePlanets")
 let btnDiv = document.getElementById("buttons")
 let btnPage1 = document.getElementById("btn01")
+let btnPage2 = document.getElementById("btn02")
 
 function callApi(url){
     fetch(url)
@@ -19,6 +20,7 @@ function callApi(url){
             .then(function(data){
                 console.log(data);
                 createTable(data.results,table)
+                btnPage2.style.display = "inline-block"
             })
         })
         
@@ -37,14 +39,31 @@ function createTable(data,element){
 btnPage1.addEventListener("click", event =>{
     event.preventDefault()   
     callApi('https://swapi.dev/api/planets/?page=1')
-    let btnPage2 = document.createElement("button")
-    btnPage2.innerText = `Page 02`
-    btnDiv.appendChild(btnPage2)
+    
     btnPage2.addEventListener("click", event =>{
-        event.preventDefault()   
+        event.preventDefault()
         btnPage2.remove()
         callApi('https://swapi.dev/api/planets/?page=2')
         
     })
+    
 })
 
+// dynamic add second button and disable first button
+
+// btnPage1.addEventListener("click", event =>{
+//     event.preventDefault()   
+//     callApi('https://swapi.dev/api/planets/?page=1')
+//     let btnPage2 = document.createElement("button")
+//     btnPage2.innerText = `Page 02`
+//     btnDiv.appendChild(btnPage2)
+//     //btnPage1.disabled = true
+//     btnPage2.addEventListener("click", event =>{
+//         event.preventDefault()
+//         //btnPage1.disabled = false 
+//         btnPage2.remove()
+//         callApi('https://swapi.dev/api/planets/?page=2')
+        
+//     })
+    
+// })
