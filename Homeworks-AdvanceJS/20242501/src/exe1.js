@@ -24,14 +24,7 @@ new Product("Broccoli", "vegetable", true, 120)]
 
 
 console.log(`===Find all products with price greater than 20.===`)
-// arrayOfProducts.forEach(getPrices)
-// function getPrices(p){
-//     if(p.price>100){
-//         console.log(p.price)
-//     }
-// }
-arrayOfProducts.forEach((p)=>{if(p.price>100){console.log(p.price)}});
-
+arrayOfProducts.filter(p=>p.price>100).forEach(p=>console.log(`${p.name} ${p.price}`))
 
 
 
@@ -43,9 +36,8 @@ let foodOnDiscount2 = arrayOfProducts.filter(p=> p.category === "food" && p.hasD
 
 
 console.log(`===Get the price of all products that are on discount.===`)
-let discount = arrayOfProducts.filter(d=>d.hasDiscount == true).forEach(p=>console.log(p.name))
-console.log('==second way==')
-let discount2 = arrayOfProducts.filter(d=>d.hasDiscount == true).map(p=>p.name).forEach(p=>console.log(p))
+let discount = arrayOfProducts.filter(d=>d.hasDiscount == true).forEach(p=>console.log(`${p.name} ${p.price}`))
+
 
 
 console.log(`===Find the name and price of all products with name starting with a vowel, that are not on discount..===`)
