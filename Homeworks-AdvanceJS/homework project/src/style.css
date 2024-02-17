@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(127, 255, 212, 0.375);
+}
+h1{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 50px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+    width: 70%;
+    font-size: 1em;
+    padding-top: 30px;
+   
+}
+.inputsContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    width: auto;
+    border: 3px double black;
+    padding: 20px;
+    margin-bottom: 30px;
+    
+}
+.inputSelect, .inputByModel, .filterByDoors, .horsePower{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 5px;
+    margin: 5px;
+      
+
+}
+
+
+.new, .old, .both{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.radioBtn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column;
+    border: 1px black double;
+    margin: 5px;
+    
+}
+.horsePower, .btns{
+    border: 1px black double;
+}
+.radioP{
+    display: flex;
+    justify-content: center;
+}
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 30px;
+}
+
+.submit, .reset{
+    width: 100px;
+    height: 30px;
+}
+
+#noFilterTableContainer, #filteredTable{
+    display: none;
+}
