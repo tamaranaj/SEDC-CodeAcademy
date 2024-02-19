@@ -60,7 +60,8 @@ let filteringTableService = {
         
         let values = inputsLocationService.getInputValues()
             console.log(values)
-        let filterValues = values.filter(Boolean).filter(item=> item!="default")
+            // let filterValues = values.filter(Boolean).filter(item=> item!="default")
+            let filterValues = values.filter((value)=>value || value === false).filter(item=> item!="default")
             //console.log(filterValues)
 
         return filterValues
@@ -73,17 +74,46 @@ let filteringTableService = {
         
         let found = [];
         for(let items of test){
-            let intersectionEvery = values.every( value => items.includes(value) );
+            let intersectionEvery =  values.every(value=>items.includes(value)); 
+    
+                if(intersectionEvery){
+                    found.push(items)
+                    
+                }
             
-            if (intersectionEvery) {
-                found.push(items)
+            if(inputsLocationService.inputByModel.value){
+                let result = chars(items, values)
+                if(result){
+                    if(!found.includes(result))
+                    found.push(result)
+                }
             }
             
+            
         }
+        
+
+        
+        console.log(found)
         return found   
     }
 }
-
+function chars(items, values){
+    for(let name of items){
+        
+        //console.log(typeof(name))
+        if(typeof(name) =="string"){
+            for(let value of values){
+                let result = name.includes(value)
+                if(result){
+                    return items
+                    
+                }
+            }
+        }    
+        
+    }
+}
 
 let creatingTableService = {
     tableContainer: document.getElementById("tableContainer"),
