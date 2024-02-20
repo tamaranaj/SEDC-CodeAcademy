@@ -43,7 +43,6 @@ let inputsLocationService = {
             this.brandSelect.value,
             this.gasTypeSelect.value,
             this.colorSelect.value,
-            this.inputByModel.value,
             parseInt(this.inputByDoors.value),
             radioValue, 
             parseInt(this.inputPower.value)
@@ -60,9 +59,8 @@ let filteringTableService = {
         
         let values = inputsLocationService.getInputValues()
             console.log(values)
-            // let filterValues = values.filter(Boolean).filter(item=> item!="default")
             let filterValues = values.filter((value)=>value || value === false).filter(item=> item!="default")
-            //console.log(filterValues)
+            
 
         return filterValues
     },
@@ -70,50 +68,61 @@ let filteringTableService = {
         let values = this.validatingInputs()
         console.log(values)
         let test = data.map(item=> Object.values(item))
-            console.log(test)
+        console.log(test)
+            
+        let found = this.filteringInputs(test,values)
         
-        let found = [];
-        for(let items of test){
-            let intersectionEvery =  values.every(value=>items.includes(value)); 
-    
-                if(intersectionEvery){
-                    found.push(items)
-                    
-                }
-            
-            if(inputsLocationService.inputByModel.value){
-                let result = chars(items, values)
-                if(result){
-                    if(!found.includes(result))
-                    found.push(result)
-                }
+        if(inputsLocationService.inputByModel.value && found.length>0 && values.length>0){
+            let result = this.characters(found,inputsLocationService.inputByModel.value)
+            console.log(result)
+            if(result){
+                return result
             }
-            
-            
         }
         
-
-        
+        if(inputsLocationService.inputByModel.value && values.length == 0){
+            let result = this.characters(test, inputsLocationService.inputByModel.value)
+            console.log(result)
+            if (result){
+                return result
+            }
+        }
+                   
         console.log(found)
-        return found   
-    }
-}
-function chars(items, values){
-    for(let name of items){
+           return found
+    }, 
+    characters: function(array,value){
+        let inputText = []
+    for(let items of array){
+        for(let name of items){
         
-        //console.log(typeof(name))
-        if(typeof(name) =="string"){
-            for(let value of values){
+            if(typeof(name) =="string"){
                 let result = name.includes(value)
                 if(result){
-                    return items
-                    
+                    if(!inputText.includes(items)){
+                        inputText.push(items)
+                    }
                 }
+            }    
+        }
+    }
+    return inputText
+    }, 
+    filteringInputs: function(array,values){
+        let found = [];
+        for(let items of array){
+            let intersectionEvery = values.every( value => items.includes(value) );
+            if (intersectionEvery) {
+                found.push(items)
             }
-        }    
-        
+            
+        }
+    return found
     }
 }
+
+
+
 
 let creatingTableService = {
     tableContainer: document.getElementById("tableContainer"),
