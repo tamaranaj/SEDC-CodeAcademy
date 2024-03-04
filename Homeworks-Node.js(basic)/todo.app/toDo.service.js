@@ -32,7 +32,7 @@ export const isDone = async(id)=>{
     if(result){
         result.isDone = true
         const stringifiedTodos = JSON.stringify(todos)
-        event.emit("finished", result.name)
+        event.emit("finished", result)
         await fsPromises.writeFile("./db/toDos.json", stringifiedTodos)
     }else{
         throw new Error("To do not found")
@@ -48,7 +48,7 @@ export const deleteTodo = async(id)=>{
         let index = todos.indexOf(result)
         let deleted = todos.toSpliced(index,1)
         const deletedStr = JSON.stringify(deleted)
-        event.emit("removed", result.name)
+        event.emit("removed", result)
         await fsPromises.writeFile("./db/toDos.json", deletedStr)
     }else{
         throw new Error("To do not found")

@@ -1,5 +1,5 @@
 import {isDone, deleteTodo, getTodos} from "./toDo.service.js"
 
-await isDone(1709556512056) //id
-await deleteTodo(1709556512053) //id
+await isDone(1709558988723) //id
+await deleteTodo(1709558988723) //id
 console.log(await getTodos())
