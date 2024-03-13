@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "fa1c7712-a8e4-4ab5-b0aa-d7d02cd18778",
-		"name": "Nomework4",
+		"name": "Homework4",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "33374042"
 	},
@@ -42,14 +42,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/books/10",
+					"raw": "localhost:3000/books/13",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"books",
-						"10"
+						"13"
 					]
 				}
 			},
@@ -62,7 +62,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"bookTitle\": \"Mrs Dalloway\",\r\n    \"isAvailable\": true,\r\n    \"genre\": \"Novel\",\r\n    \"author\": \"Virginia Woolf\",\r\n    \"pages\": 216\r\n}",
+					"raw": "{   \"bookTitle\": \"The Old Man and the Sea\",\r\n    \"isAvailable\": false,\r\n    \"genre\": \" Novel\",\r\n    \"author\": \"Ernest Hemingway\",\r\n    \"pages\": 128\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -77,6 +77,53 @@
 					"port": "3000",
 					"path": [
 						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/books/The Castle",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"The Castle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookTitle\": \"The Castle\",\r\n    \"isAvailable\": true,\r\n    \"genre\": \"Novel\",\r\n    \"author\": \"Franz Kafka\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books/5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"5"
 					]
 				}
 			},

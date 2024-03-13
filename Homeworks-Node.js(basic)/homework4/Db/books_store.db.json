@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "bookTitle": "The Decameron",
+    "isAvailable": true,
+    "genre": "Fiction",
+    "author": "Giovanni Boccaccio",
+    "pages": 281
+  },
+  {
+    "id": "2",
+    "bookTitle": "1984",
+    "isAvailable": true,
+    "genre": "Dystopian",
+    "author": "George Orwell",
+    "pages": 328
+  },
+  {
+    "id": "3",
+    "bookTitle": "The Divine Comedy",
+    "isAvailable": true,
+    "genre": "Epic poetry",
+    "author": "Dante Alighieri",
+    "pages": 928
+  },
+  {
+    "id": "4",
+    "bookTitle": "Pride and Prejudice",
+    "isAvailable": false,
+    "genre": "Romance",
+    "author": "Jane Austen",
+    "pages": 279
+  },
+  {
+    "id": "6",
+    "bookTitle": "Stories",
+    "isAvailable": false,
+    "genre": " Fiction/Anthology",
+    "author": "Anton Chekhov",
+    "pages": 194
+  },
+  {
+    "id": "7",
+    "bookTitle": "Don Quijote De La Mancha",
+    "isAvailable": false,
+    "genre": " Novel",
+    "author": "Miguel de Cervantes",
+    "pages": 1056
+  },
+  {
+    "id": "8",
+    "bookTitle": "Crime and Punishment",
+    "isAvailable": true,
+    "genre": " Novel",
+    "author": "Fyodor Dostoevsky",
+    "pages": 551
+  },
+  {
+    "id": "9",
+    "bookTitle": "Middlemarch",
+    "isAvailable": false,
+    "genre": " Novel",
+    "author": "George Eliot",
+    "pages": 800
+  },
+  {
+    "bookTitle": "Othello",
+    "isAvailable": true,
+    "genre": "Novel",
+    "author": "William Shakespeare",
+    "pages": 314,
+    "id": 11
+  },
+  {
+    "id": "619fba5a-036b-4c41-8f88-ad24e63c86ae",
+    "bookTitle": "The Old Man and the Sea",
+    "isAvailable": false,
+    "genre": " Novel",
+    "author": "Ernest Hemingway",
+    "pages": 128
+  }
+]

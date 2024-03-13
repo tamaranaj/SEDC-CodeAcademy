@@ -1,0 +1,45 @@
+[
+  {
+    "bookTitle": "Anna Karenina",
+    "isAvailable": true,
+    "genre": "Novel",
+    "author": "Leo Tolstoy",
+    "pages": 864,
+    "id": 12
+  }
+][
+  {
+    "id": "10",
+    "bookTitle": "The Old Man and the Sea",
+    "isAvailable": false,
+    "genre": " Novel",
+    "author": "Ernest Hemingway",
+    "pages": 128
+  }
+][
+  {
+    "id": "e2612ecc-04f3-4a5c-a936-18deac7b6908",
+    "bookTitle": "The Castle",
+    "isAvailable": true,
+    "genre": "Novel",
+    "author": "Franz Kafka",
+    "pages": 352
+  },
+  {
+    "id": "a4ed51c0-fc40-4fb4-a7f1-5f6353399a04",
+    "bookTitle": "The Castle",
+    "isAvailable": true,
+    "genre": "Novel",
+    "author": "Franz Kafka",
+    "pages": 352
+  }
+][
+  {
+    "id": "5",
+    "bookTitle": "The Castle",
+    "isAvailable": true,
+    "genre": "Novel",
+    "author": "Franz Kafka",
+    "pages": 185
+  }
+]
