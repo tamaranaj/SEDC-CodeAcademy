@@ -1,0 +1,116 @@
+[
+  {
+    "bookTitle": "Anna Karenina",
+    "isAvailable": true,
+    "genre": "Novel",
+    "author": "Leo Tolstoy",
+    "pages": 864,
+    "id": 12
+  }
+][
+  {
+    "id": "10",
+    "bookTitle": "The Old Man and the Sea",
+    "isAvailable": false,
+    "genre": " Novel",
+    "author": "Ernest Hemingway",
+    "pages": 128
+  }
+][
+  {
+    "id": "e2612ecc-04f3-4a5c-a936-18deac7b6908",
+    "bookTitle": "The Castle",
+    "isAvailable": true,
+    "genre": "Novel",
+    "author": "Franz Kafka",
+    "pages": 352
+  },
+  {
+    "id": "a4ed51c0-fc40-4fb4-a7f1-5f6353399a04",
+    "bookTitle": "The Castle",
+    "isAvailable": true,
+    "genre": "Novel",
+    "author": "Franz Kafka",
+    "pages": 352
+  }
+][
+  {
+    "id": "5",
+    "bookTitle": "The Castle",
+    "isAvailable": true,
+    "genre": "Novel",
+    "author": "Franz Kafka",
+    "pages": 185
+  }
+][][
+  {
+    "bookTitle": "Othello",
+    "isAvailable": true,
+    "genre": "Novel",
+    "author": "William Shakespeare",
+    "pages": 314,
+    "id": 11
+  }
+][][
+  {
+    "id": "619fba5a-036b-4c41-8f88-ad24e63c86ae",
+    "bookTitle": "The Old Man and the Sea",
+    "isAvailable": false,
+    "genre": " Novel",
+    "author": "Ernest Hemingway",
+    "pages": 128
+  },
+  {
+    "id": "e319afac-53c9-4e12-b7fe-4ab5ebd0bac6",
+    "bookTitle": "The Old Man and the Sea",
+    "isAvailable": false,
+    "genre": " Novel",
+    "author": "Ernest Hemingway",
+    "pages": 128
+  }
+][][
+  {
+    "id": "f4022f32-942d-4a80-8a0a-8f270f48f246",
+    "bookTitle": "The Old Man and the Sea",
+    "isAvailable": false,
+    "genre": " Novel",
+    "author": "Ernest Hemingway",
+    "pages": 128
+  }
+][][][
+  {
+    "id": "6476520d-ecd7-480c-a071-8bd94c39dbc5",
+    "bookTitle": "The Old Man and the Sea",
+    "isAvailable": false,
+    "genre": " Novel",
+    "author": "Ernest Hemingway",
+    "pages": 128
+  }
+][
+  {
+    "id": "9d4b7f8c-3ecb-4688-9475-8ccb67d886f9",
+    "bookTitle": "The Old Man and the Sea",
+    "isAvailable": false,
+    "genre": " Novel",
+    "author": "Ernest Hemingway",
+    "pages": 128
+  }
+][
+  {
+    "id": "1",
+    "bookTitle": "The Castle",
+    "isAvailable": true,
+    "genre": "Novel",
+    "author": "Franz Kafka",
+    "pages": 281
+  }
+][
+  {
+    "id": "bf9e3478-2c77-4760-b6be-be3725398a50",
+    "bookTitle": "The Old Man and the Sea",
+    "isAvailable": false,
+    "genre": " Novel",
+    "author": "Ernest Hemingway",
+    "pages": 128
+  }
+]
