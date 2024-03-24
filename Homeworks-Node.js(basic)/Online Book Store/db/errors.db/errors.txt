@@ -1,0 +1,34 @@
+
+At 1710942113955 an error happened: Error: Book not found.
+At 1710942113956 an error happened: Error: Book not found.
+At 1710942138861 an error happened: Error: Book not found.
+At 1710942138862 an error happened: Error: Book not found.
+At 1710942146543 an error happened: Error: Book not found.
+At 1710942146543 an error happened: Error: Book not found.
+At 1710942149215 an error happened: Error: Book not found.
+At 1710942149216 an error happened: Error: Book not found.
+At 1710943326467 an error happened: TypeError: deletedBooksDb is not iterable.
+At 1710943560484 an error happened: SyntaxError: Unexpected end of JSON input.
+At 1710943628108 an error happened: SyntaxError: Unexpected end of JSON input.
+At 1710943677186 an error happened: SyntaxError: Unexpected end of JSON input.
+At 1711282486010 an error happened: Error: Book not found.
+At 1711284014951 an error happened: Error: Book not found.
+At 1711284014951 an error happened: Error: Book not found.
+At 1711288399703 an error happened: Error: Book not found.
+At 1711288435367 an error happened: Error: Book not found.
+At 1711288509556 an error happened: Error: Book not found.
+At 1711288509557 an error happened: Error: Book not found.
+At 1711306437670 an error happened: TypeError: deletedBooksDb is not iterable.
+At 1711306453591 an error happened: TypeError: deletedBooksDb is not iterable.
+At 1711306476571 an error happened: TypeError: deletedBooksDb is not iterable.
+At 1711306515843 an error happened: TypeError: deletedBooksDb is not iterable.
+At 1711306831419 an error happened: Error: Book not found.
+At 1711306831420 an error happened: Error: Book not found.
+At 1711306837053 an error happened: TypeError: deletedBooksDb is not iterable.
+At 1711306960752 an error happened: TypeError: deletedBooksDb is not iterable.
+At 1711307005477 an error happened: TypeError: deletedBooksDb is not iterable.
+At 1711307053571 an error happened: TypeError: deletedBooksDb is not iterable.
+At 1711307176011 an error happened: TypeError: deletedBooksDb is not iterable.
+At 1711307260262 an error happened: TypeError: deletedBooksDb is not iterable.
+At 1711307345046 an error happened: TypeError: deletedBooksDb is not iterable.
+At 1711307412811 an error happened: TypeError: deletedBooksDb is not iterable.

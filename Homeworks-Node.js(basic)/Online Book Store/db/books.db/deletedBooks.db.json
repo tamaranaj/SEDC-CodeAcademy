@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "id": "6ba4755d-2c10-4b7b-ba7e-131e934d3c19",
+      "bookTitle": "The Castle",
+      "isAvailable": true,
+      "genre": "Novel",
+      "author": "Franz Kafka",
+      "pages": 928
+    }
+  ],
+  [
+    {
+      "id": "11e6a233-764b-4273-9d6a-0d53ae071f31",
+      "bookTitle": "The Castle",
+      "isAvailable": true,
+      "genre": "Novel",
+      "author": "Franz Kafka",
+      "pages": 928
+    }
+  ]
+]

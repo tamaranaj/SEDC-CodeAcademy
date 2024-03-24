@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "fa1c7712-a8e4-4ab5-b0aa-d7d02cd18778",
+		"name": "Online Book store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33374042"
+	},
+	"item": [
+		{
+			"name": "Get All Books -public",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book By ID - public",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/books/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get book by title - public",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/findbook/1984",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"findbook",
+						"1984"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"someone@.com\",\r\n    \"password\": \"123\",\r\n    \"permission\" : \"USER\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"1234@.com\",\r\n    \"password\":  \"123\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Create Book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNvbWVvbmUxQC5jb20iLCJwZXJtaXNzaW9uIjoiVVIiLCJpYXQiOjE3MTEzMDc0NzQsImV4cCI6MTcxMTMxNDY3NH0.nCJX9saCWpI3V6X730jYpATeZojOWuK6FKVDcXfRqtw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"bookTitle\": \"The Castle\",\r\n        \"isAvailable\": true,\r\n        \"genre\": \"Novel\",\r\n        \"author\": \"Franz Kafka\",\r\n        \"pages\": 928\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete book",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNvbWVvbmVALmNvbSIsImlhdCI6MTcxMTMwNjM1MiwiZXhwIjoxNzExMzEzNTUyfQ.L-zukw7e4iSPMWdF7gWpXGeadY0Basd5XtQ-guNmmAw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/books/The Castle",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"The Castle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit book- admin only",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjEyMzRALmNvbSIsInBlcm1pc3Npb24iOiJBRE1JTiIsImlhdCI6MTcxMTMwNzYxOSwiZXhwIjoxNzExMzE0ODE5fQ.Lncbuw_JW6v_AHduI6YAO7VDEHjA9abDSkBgRKJihU4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAvailable\": \"false\",\r\n    \"genre\": \"Poem\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books/10",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get deleted books - admin only",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjEyMzRALmNvbSIsInBlcm1pc3Npb24iOiJBRE1JTiIsImlhdCI6MTcxMTMwNzYxOSwiZXhwIjoxNzExMzE0ODE5fQ.Lncbuw_JW6v_AHduI6YAO7VDEHjA9abDSkBgRKJihU4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/deletedbooks",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deletedbooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"email\": \"123@.com\",\r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
