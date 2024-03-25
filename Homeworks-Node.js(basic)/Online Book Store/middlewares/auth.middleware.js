@@ -25,7 +25,7 @@ export const authorize = (req,res,next) =>{
 }
 
 export const authorizeUsers = (req, res, next)=>{
-    if(req.user.permission !== "ADMIN" || req.user.permission !== "USER"){
+    if(req.user.permission !== "ADMIN" && req.user.permission !== "USER"){
         return res.status(403).send({message: "Forbidden"});
     }
 
