@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "3bdfd1a5-e1ac-4776-84f1-1b961a912bd3",
+		"name": "Adv Node.js class4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33374042"
+	},
+	"item": [
+		{
+			"name": "Create Accommodation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Hotel Radika\" ,\r\n  \"address\": \"Mavrovo\",\r\n  \"bookingPricePerDay\": 150,\r\n  \"type\": \"Hotel\",\r\n  \"hasAC\": true,\r\n  \"hasPrivateParking\": true,\r\n  \"hasWifi\": true,\r\n  \"isAvailable\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/accommodations",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accommodations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Accommodations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/accommodations",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accommodations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/accommodations/660aeb98ccfe69854012050e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accommodations",
+						"660aeb98ccfe69854012050e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/accommodations/660ae9c4d069d2e87f63f47c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accommodations",
+						"660ae9c4d069d2e87f63f47c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Aurora\",\r\n    \"address\": \"Berovo\",\r\n    \"bookingPricePerDay\": 200\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/accommodations/660aeb98ccfe69854012050e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accommodations",
+						"660aeb98ccfe69854012050e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accommodation\": \"660ae7e3a507b59930d43646\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/bookings",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get booked Accommodations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bookings",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Booked Accommodation",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bookings/660b03d603c8774134d6a690",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookings",
+						"660b03d603c8774134d6a690"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
