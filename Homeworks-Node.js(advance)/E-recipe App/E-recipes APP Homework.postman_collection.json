@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "3265f4a2-c156-4cfb-82a0-941640e09db1",
+		"name": "E-recipes APP Homework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33374042"
+	},
+	"item": [
+		{
+			"name": "Create Recipe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"recipeName\": \"Musaka\",\r\n  \"description\": \"Very delicious meal.\",\r\n  \"cookingDuration\": \"1 hour\",\r\n   \"ingredients\": [],\r\n  \"servings\": 4,\r\n  \"difficulty\": \"EASY\",\r\n  \"cuisine\": \"Macedonian\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/recipes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read all recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/recipes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find recipe by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/recipes/660c3f958aa7d289538733cc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipes",
+						"660c3f958aa7d289538733cc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by ID - User and Admin",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjEyM0AuY29tIiwicGVybWlzc2lvbiI6IlVTRVIiLCJpYXQiOjE3MTIwNzU5NjcsImV4cCI6MTcxMjA4MzE2N30.MEu8I_-S8L96fmBO5tQomth9MPRr_giAT9tocu8IkgY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/recipes/660c430da646737228aeb5cf",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipes",
+						"660c430da646737228aeb5cf"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update recipe by ID - User and admin",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNvbWVvbmVhZG1pbkAuY29tIiwicGVybWlzc2lvbiI6IkFETUlOIiwiaWF0IjoxNzEyMDc5MzY1LCJleHAiOjE3MTIwODY1NjV9.sF4lnvXdUDA2eufwdokXl3eYda8MraTASlEEivrhj54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"recipeName\": \"Baked beans with sausages\",\r\n  \"description\": \"Very delicious traditional Macedonian meal.\",\r\n  \"cookingDuration\": \"3 hours\",\r\n  \"ingredients\": [\"white beans\", \"sausages\", \"salt\", \"pepper\", \"onion\", \"water\"],\r\n  \"servings\": 4,\r\n  \"difficulty\": \"EASY\",\r\n  \"cuisine\": \"Macedonian\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/recipes/660c3f4c8aa7d289538733c6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipes",
+						"660c3f4c8aa7d289538733c6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"someoneadmin@.com\",\r\n    \"password\": \"someoneadmin\",\r\n    \"permission\": \"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"someoneadmin@.com\",\r\n    \"password\": \"someoneadmin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get deleted recipes - ADMIN",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNvbWVvbmVhZG1pbkAuY29tIiwicGVybWlzc2lvbiI6IkFETUlOIiwiaWF0IjoxNzEyMDc5MzY1LCJleHAiOjE3MTIwODY1NjV9.sF4lnvXdUDA2eufwdokXl3eYda8MraTASlEEivrhj54",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/deletedRecipes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deletedRecipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get original recipes(before update)-ADMIN",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNvbWVvbmVhZG1pbkAuY29tIiwicGVybWlzc2lvbiI6IkFETUlOIiwiaWF0IjoxNzEyMDc5MzY1LCJleHAiOjE3MTIwODY1NjV9.sF4lnvXdUDA2eufwdokXl3eYda8MraTASlEEivrhj54",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/getOriginalRecipe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getOriginalRecipe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
