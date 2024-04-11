@@ -1,45 +1,49 @@
 import { v4 as uuid} from "uuid"
-type MovieType = {
-    id: string,
-    title: string,
-    duration: number,
-    genre: string,
-    hasWonOscar?:boolean
-}
 
 interface IMovie {
-    id: string
+    id: string;
+    title: string;
+    duration: number;
+    genre: string;
+    hasWonOscar?: boolean;
 }
 
-class Movie implements IMovie {
-    id: string 
-    private title: string
-    private duration: number
-    private genre: string
-    private hasWonOscar?: boolean 
-    constructor(movieTitle: string, movieDuration: number, movieGenre: string, movieHasOscar?: boolean) {
-        this.id = uuid();
-        this.title = movieTitle;
-        this.duration = movieDuration;
-        this.genre = movieGenre;
-        this.hasWonOscar = movieHasOscar;
+class Movie implements IMovie{
+    private _id: string;
+    private _title: string;
+    private _duration: number;
+    private _genre: string
+    private _hasWonOscar?: boolean
+
+    constructor(movieTitle: string, movieD: number, movieGenre: string, oscar?: boolean){
+        this._id = uuid()
+        this._title = movieTitle
+        this._duration = movieD
+        this._genre = movieGenre
+        this._hasWonOscar = oscar
+    }
+   
+    get id(): string {
+        return this._id;
     }
 
-
-    getProperties(): MovieType {
-        return{
-            id: this.id,
-            title: this.title,
-            duration: this.duration,
-            genre: this.genre,
-            hasWonOscar : this.hasWonOscar
-        }
-        
+    get title(): string {
+        return this._title;
     }
+
+    get duration(): number {
+        return this._duration;
+    }
+
+    get genre(): string {
+        return this._genre;
+    }
+
+    get hasWonOscar(): boolean | undefined{
+        return this._hasWonOscar;
+    }
+
 }
-
-
-
 
 class MovieLibrary{
 
@@ -50,7 +54,7 @@ class MovieLibrary{
     }
 
     printMovies(genre: string = "action"): Movie[] | string{
-       const movies = this.movies.filter(item=>item.getProperties().genre === genre)
+       const movies = this.movies.filter(item=> item.genre === genre)
        
         if(movies.length === 0){
             return `No ${genre} movies found.`
@@ -61,7 +65,7 @@ class MovieLibrary{
     }
 
     static movieDetail(movie: Movie): string{
-        return `Movie name is ${movie.getProperties().title} and is of genre : ${movie.getProperties().genre}`
+        return `Movie name is ${movie.title} and is of genre : ${movie.genre}`
     }
 
     getAllMovies(): IMovie[]{
@@ -86,3 +90,5 @@ console.table(movieLibrary.printMovies("drama"))
 console.log(movieLibrary.printMovies("comedy"))
 console.log(MovieLibrary.movieDetail(secondMovie))
 console.table(movieLibrary.getAllMovies())
+
+
