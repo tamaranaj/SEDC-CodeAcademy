@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "8f7829e1-9a85-4c6c-9825-9da252c4c90d",
+		"name": "Budget Tracker App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33374042"
+	},
+	"item": [
+		{
+			"name": "Get Budgets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/budget",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"budget"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create budget",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Title\",\r\n    \"balance\": 10000,\r\n    \"currency\": \"MKD\",\r\n    \"expenses\": {\r\n        \"amount\" : 2000,\r\n        \"description\" : \"food and drinks\"\r\n    },\r\n    \"incomes\": {\r\n            \"amount\": 25000,\r\n            \"description\": \"salary\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/budget",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"budget"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/budget/bf4f6d52-745b-44a2-900d-4861e9982cd7",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"budget",
+						"bf4f6d52-745b-44a2-900d-4861e9982cd7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete budget",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/budget/4fd5a285-3252-44cc-a828-a330106be9bc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"budget",
+						"4fd5a285-3252-44cc-a828-a330106be9bc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update budget",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"some title\",\r\n    \"balance\": 1000,\r\n    \"currency\": \"USD\",\r\n    \"expenses\": {\r\n        \"amount\" : 30,\r\n        \"description\" : \"some description\"\r\n    },\r\n    \"incomes\": {\r\n            \"amount\": 2550,\r\n            \"description\": \"some description\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/budget/7ac0ddd3-ae8e-4807-8b5f-d15427e47d4b",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"budget",
+						"7ac0ddd3-ae8e-4807-8b5f-d15427e47d4b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
