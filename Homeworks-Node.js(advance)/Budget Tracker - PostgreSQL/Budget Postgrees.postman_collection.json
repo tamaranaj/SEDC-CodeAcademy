@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "91d8d369-085d-4b44-bcc8-22c89985b326",
+		"name": "Budget Postgrees",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33374042"
+	},
+	"item": [
+		{
+			"name": "Budgets",
+			"item": [
+				{
+					"name": "Create budget",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Spiro\",\r\n    \"lastName\": \"Sekulovski\",\r\n    \"balance\": 1000,\r\n    \"currency\": \"USD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/budget",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"budget"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Budgets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/budget",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"budget"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update budget",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"balance\": 4000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/budget/a03ac601-b31e-4f43-81bd-6c5099a9fcab",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"budget",
+								"a03ac601-b31e-4f43-81bd-6c5099a9fcab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete budget",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/budget/bb105569-3bbc-4ca3-9b05-cfd3031f8812",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"budget",
+								"bb105569-3bbc-4ca3-9b05-cfd3031f8812"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find budget",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/budget/5fa8a17e-29a2-4d9c-b94b-9dc7f924a676",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"budget",
+								"5fa8a17e-29a2-4d9c-b94b-9dc7f924a676"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Expense",
+			"item": [
+				{
+					"name": "Create Expense",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": -2000,\r\n    \"description\": \"new bike\",\r\n    \"budgetID\": \"5fa8a17e-29a2-4d9c-b94b-9dc7f924a676\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/expenses",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"expenses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get expenses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/expenses",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"expenses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find expense",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/expenses/8b395da2-70d0-48af-bb21-e6487d122100",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"expenses",
+								"8b395da2-70d0-48af-bb21-e6487d122100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update expense",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"prep for party\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/expenses/86dbea9c-bd6f-4094-a12d-618b79221aa9",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"expenses",
+								"86dbea9c-bd6f-4094-a12d-618b79221aa9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Income",
+			"item": [
+				{
+					"name": "Get income",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/incomes",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"incomes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find income",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/incomes/651fbc26-884a-4bf0-bc1c-88497758830a",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"incomes",
+								"651fbc26-884a-4bf0-bc1c-88497758830a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create income",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 10000,\r\n    \"description\": \"sallary\",\r\n    \"budgetID\": \"5fa8a17e-29a2-4d9c-b94b-9dc7f924a676\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/incomes",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"incomes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update income",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 13000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/incomes/e7c4c5e0-dba4-4560-b47d-cb84818d0068",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"incomes",
+								"e7c4c5e0-dba4-4560-b47d-cb84818d0068"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
