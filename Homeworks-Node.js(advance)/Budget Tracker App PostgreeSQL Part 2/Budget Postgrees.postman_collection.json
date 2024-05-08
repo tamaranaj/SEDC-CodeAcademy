@@ -1,0 +1,564 @@
+{
+	"info": {
+		"_postman_id": "91d8d369-085d-4b44-bcc8-22c89985b326",
+		"name": "Budget Postgrees",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33374042"
+	},
+	"item": [
+		{
+			"name": "Budgets",
+			"item": [
+				{
+					"name": "Create budget",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImVtYWlsIjoibWFpbDEyM0BtYWlsLmNvbSIsImlhdCI6MTcxNDYzNjAyMCwiZXhwIjoxNzE0NjM2OTIwfQ.KNQeoW-zDM23aL0Ft_1327PehScu0V_le_BUVZ6d6O4",
+								"type": "text",
+								"uuid": "e1af77eb-05ee-4e02-ac1f-42480447df56"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"balance\": 6000,\r\n    \"currency\": \"EUR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/budget",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"budget"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Budgets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImVtYWlsIjoibWFpbDEyM0BtYWlsLmNvbSIsImlhdCI6MTcxNDYzNjAyMCwiZXhwIjoxNzE0NjM2OTIwfQ.KNQeoW-zDM23aL0Ft_1327PehScu0V_le_BUVZ6d6O4",
+								"type": "text",
+								"uuid": "635cfd6c-2851-4151-a8f4-74d1678da682"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/budget",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"budget"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update budget",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImVtYWlsIjoibWFpbDEyM0BtYWlsLmNvbSIsImlhdCI6MTcxNDYzNjAyMCwiZXhwIjoxNzE0NjM2OTIwfQ.KNQeoW-zDM23aL0Ft_1327PehScu0V_le_BUVZ6d6O4",
+								"type": "text",
+								"uuid": "211c05a3-d6ee-4bea-b74d-558806af7102"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"balance\": 6000,\r\n    \"currency\": \"USD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/budget",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"budget"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete budget",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjIsImVtYWlsIjoibWFpbDEyM0BtYWlsLmNvbSIsImlhdCI6MTcxNDQ3MzMzMywiZXhwIjoxNzE0NDc0MjMzfQ.Lka5IXptcuJhKc-fiCjyCQs8LugrmeHqSFAXTadtcS4",
+								"type": "text",
+								"uuid": "9394dbf5-d99e-49be-a1fd-4bfda5c9b388"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/budget/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"budget",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Expense",
+			"item": [
+				{
+					"name": "Create Expense",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImVtYWlsIjoibWFpbDEyM0BtYWlsLmNvbSIsImlhdCI6MTcxNDYzNjAyMCwiZXhwIjoxNzE0NjM2OTIwfQ.KNQeoW-zDM23aL0Ft_1327PehScu0V_le_BUVZ6d6O4",
+								"type": "text",
+								"uuid": "3bfb8f83-8a12-4123-b843-b08b2629e631"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 100,\r\n    \"description\": \"food and drinks\",\r\n    \"currency\": \"USD\",\r\n    \"budgetID\": \"52873644-be1c-4afb-b13e-e2076ea7bc07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/expenses",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"expenses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get expenses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImVtYWlsIjoibWFpbDEyM0BtYWlsLmNvbSIsImlhdCI6MTcxNDYzNjAyMCwiZXhwIjoxNzE0NjM2OTIwfQ.KNQeoW-zDM23aL0Ft_1327PehScu0V_le_BUVZ6d6O4",
+								"type": "text",
+								"uuid": "f313cf54-ed4c-496e-bb7c-17b6ff3ea31d"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/expenses",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"expenses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find expense",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImVtYWlsIjoibWFpbDEyM0BtYWlsLmNvbSIsImlhdCI6MTcxNDYzNjAyMCwiZXhwIjoxNzE0NjM2OTIwfQ.KNQeoW-zDM23aL0Ft_1327PehScu0V_le_BUVZ6d6O4",
+								"type": "text",
+								"uuid": "a382e4bb-adf3-446d-8045-20a59f6103c0"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/expenses/f426bf32-5bf3-4404-83cc-5f6d1a8eee44",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"expenses",
+								"f426bf32-5bf3-4404-83cc-5f6d1a8eee44"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update expense",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImVtYWlsIjoibWFpbDEyM0BtYWlsLmNvbSIsImlhdCI6MTcxNDYzNjAyMCwiZXhwIjoxNzE0NjM2OTIwfQ.KNQeoW-zDM23aL0Ft_1327PehScu0V_le_BUVZ6d6O4",
+								"type": "text",
+								"uuid": "2f9a9fe4-0c8d-43af-bcd4-79135e7203a9"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 1200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/expenses/f426bf32-5bf3-4404-83cc-5f6d1a8eee44",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"expenses",
+								"f426bf32-5bf3-4404-83cc-5f6d1a8eee44"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Income",
+			"item": [
+				{
+					"name": "Get income",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImVtYWlsIjoibWFpbDEyM0BtYWlsLmNvbSIsImlhdCI6MTcxNDYzNjg4MywiZXhwIjoxNzE0NjM3NzgzfQ.-T4-rEv0t-Br59Obfkfp6rQCdx0kLntBJSW-K9A1wWw",
+								"type": "text",
+								"uuid": "9299f33c-50be-46ac-9848-dc0a94af884a"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/incomes",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"incomes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find income",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjIsImVtYWlsIjoibWFpbDEyM0BtYWlsLmNvbSIsImlhdCI6MTcxNDQ3NzI3NSwiZXhwIjoxNzE0NDc4MTc1fQ.lc404jjQeAnVoa18z86zEmqg_5KlBVvaHbiEqRuOpYQ",
+								"type": "text",
+								"uuid": "8372d01d-43df-4139-afe9-a26ceb0766b7"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/incomes/96658cb9-8ef2-4fed-af85-cf9e13f3e413",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"incomes",
+								"96658cb9-8ef2-4fed-af85-cf9e13f3e413"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create income",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImVtYWlsIjoibWFpbDEyM0BtYWlsLmNvbSIsImlhdCI6MTcxNDYzNjg4MywiZXhwIjoxNzE0NjM3NzgzfQ.-T4-rEv0t-Br59Obfkfp6rQCdx0kLntBJSW-K9A1wWw",
+								"type": "text",
+								"uuid": "a53fb53e-d214-4a59-8ccc-116e23e73363"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 1000,\r\n    \"currency\": \"MKD\",\r\n    \"description\": \"gift-card\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/incomes",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"incomes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update income",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjIsImVtYWlsIjoibWFpbDEyM0BtYWlsLmNvbSIsImlhdCI6MTcxNDQ3NzI3NSwiZXhwIjoxNzE0NDc4MTc1fQ.lc404jjQeAnVoa18z86zEmqg_5KlBVvaHbiEqRuOpYQ",
+								"type": "text",
+								"uuid": "a2a3eec2-ffd9-467f-88bf-0bb40d468b0f"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 100,\r\n    \"currency\": \"EUR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/incomes/96658cb9-8ef2-4fed-af85-cf9e13f3e413",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"incomes",
+								"96658cb9-8ef2-4fed-af85-cf9e13f3e413"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admins",
+			"item": [
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQWRtaW4iLCJlbWFpbCI6Im1haWwxMjQ0NEBtYWlsLmNvbSIsImlhdCI6MTcxNTE2Njg2OSwiZXhwIjoxNzE1MTY4NjY5fQ.NO7N4_lwm2Qi304y-LdWmOiRhyx8jsCsvr2qEz-Yfiw",
+								"uuid": "434741fc-f3e0-4a90-9855-bb1f66e4d4c5"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/admin/getUsers",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"getUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all admins",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQWRtaW4iLCJlbWFpbCI6Im1haWwxMjM0NTY3QG1haWwuY29tIiwiaWF0IjoxNzE1MTU2NjM1LCJleHAiOjE3MTUxNTc1MzV9.C-L0ABN-3fgq4vpXNvL1yWVqVtlHx_WaDQz-1Eo9SwU",
+								"uuid": "cdcc021d-36b4-4208-a826-dd09fc1f57eb"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/admin/getAdmins",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"getAdmins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get budgets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQWRtaW4iLCJlbWFpbCI6Im1haWwxMjM0NTY3QG1haWwuY29tIiwiaWF0IjoxNzE1MTU2NjM1LCJleHAiOjE3MTUxNTc1MzV9.C-L0ABN-3fgq4vpXNvL1yWVqVtlHx_WaDQz-1Eo9SwU",
+								"uuid": "8b38fd6f-c10c-4174-b81a-e0a69f128408"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/admin/getBudgets",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"getBudgets"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQWRtaW4iLCJlbWFpbCI6Im1haWwxMjQ0NEBtYWlsLmNvbSIsImlhdCI6MTcxNTE2Njg2OSwiZXhwIjoxNzE1MTY4NjY5fQ.NO7N4_lwm2Qi304y-LdWmOiRhyx8jsCsvr2qEz-Yfiw",
+								"uuid": "4d87c869-3e14-418b-93f4-51611b9e0b09"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/admin/logs",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"logs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sing in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n// {\r\n//         \"email\": \"mail123@mail.com\",\r\n//     \"password\": \"mail123\"\r\n// }\r\n{\r\n        \"email\": \"mail12444@mail.com\",\r\n    \"password\": \"mail1234\"\r\n}\r\n// {\r\n//         \"email\": \"mail1244@mail.com\",\r\n//     \"password\": \"mail1234\"\r\n// }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"ggggg444g\",\r\n    \"lastName\": \"Najdgovgs44ka\",\r\n    \"email\": \"mail12444@mail.com\",\r\n    \"password\": \"mail1234\",\r\n    \"role\": \"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
