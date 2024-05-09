@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "53fa2592-b95e-4555-967e-be44c48b6fea",
+		"name": "BookLibrary",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33374042"
+	},
+	"item": [
+		{
+			"name": "Create Author",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haWwxMjNAbWFpbC5jb20iLCJpYXQiOjE3MTUyODEzMzUsImV4cCI6MTcxNTI4MzEzNX0.DcdSWpEYnoi7n0KfnWObffnMdMNH65kYL4uE08LaqDY"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Dante\",\r\n  \"lastName\": \"Alighieri\",\r\n  \"from\": \"Italy\",\r\n  \"birthDate\": \"10.05.1896\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/author",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Authors",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haWwxMjNAbWFpbC5jb20iLCJpYXQiOjE3MTUyODEzMzUsImV4cCI6MTcxNTI4MzEzNX0.DcdSWpEYnoi7n0KfnWObffnMdMNH65kYL4uE08LaqDY"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/author",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"author"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAuthor",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haWwxMjNAbWFpbC5jb20iLCJpYXQiOjE3MTUyODEzMzUsImV4cCI6MTcxNTI4MzEzNX0.DcdSWpEYnoi7n0KfnWObffnMdMNH65kYL4uE08LaqDY"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lastName\": \"Aighileri\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/author/264f495d-b1e2-4015-99fc-60042a2171fc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"author",
+						"264f495d-b1e2-4015-99fc-60042a2171fc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAuthor",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haWwxMjNAbWFpbC5jb20iLCJpYXQiOjE3MTUyODEzMzUsImV4cCI6MTcxNTI4MzEzNX0.DcdSWpEYnoi7n0KfnWObffnMdMNH65kYL4uE08LaqDY"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/author/83b0c459-3c08-4abe-95ac-f3f951579677",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"author",
+						"83b0c459-3c08-4abe-95ac-f3f951579677"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haWwxMjNAbWFpbC5jb20iLCJpYXQiOjE3MTUyODEzMzUsImV4cCI6MTcxNTI4MzEzNX0.DcdSWpEYnoi7n0KfnWObffnMdMNH65kYL4uE08LaqDY"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "// {\r\n//     \"title\": \"The Divine Comedy\",\r\n//   \"description\": \"some description\",\r\n//   \"genre\": \"Drama\",\r\n//   \"authorID\": \"83b0c459-3c08-4abe-95ac-f3f951579677\",\r\n//   \"publisher\": \"some publisher\",\r\n//   \"isbn\": 1315\r\n// }\r\n\r\n\r\n{\r\n    \"title\": \"Some title\",\r\n  \"description\": \"some description\",\r\n  \"genre\": \"Drama\",\r\n  \"authorID\": \"83b0c459-3c08-4abe-95ac-f3f951579677\",\r\n  \"publisher\": \"some publisher\",\r\n  \"isbn\": 1415\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/book",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get books",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haWwxMjNAbWFpbC5jb20iLCJpYXQiOjE3MTUyODEzMzUsImV4cCI6MTcxNTI4MzEzNX0.DcdSWpEYnoi7n0KfnWObffnMdMNH65kYL4uE08LaqDY"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/book",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"book"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/book/byID/5813b416-57fa-4d79-a1a0-e0bd1c2faa45",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"book",
+						"byID",
+						"5813b416-57fa-4d79-a1a0-e0bd1c2faa45"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete book",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haWwxMjNAbWFpbC5jb20iLCJpYXQiOjE3MTUyODEzMzUsImV4cCI6MTcxNTI4MzEzNX0.DcdSWpEYnoi7n0KfnWObffnMdMNH65kYL4uE08LaqDY"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/book/de1689d0-1d28-40e7-acf4-6df7b6ad739a",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"book",
+						"de1689d0-1d28-40e7-acf4-6df7b6ad739a"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haWwxMjNAbWFpbC5jb20iLCJpYXQiOjE3MTUyODEzMzUsImV4cCI6MTcxNTI4MzEzNX0.DcdSWpEYnoi7n0KfnWObffnMdMNH65kYL4uE08LaqDY",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mail123@mail.com\",\r\n    \"password\": \"mail123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mail123@mail.com\",\r\n    \"password\": \"mail123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
