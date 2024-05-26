@@ -59,7 +59,7 @@
     "tags":"",
     "category": "Acrylic painting",
     "artist": {  "userName" :"AIArt", "userID": "AIArt"},
-    "price": "",
+    "price": 30,
     "onDiscount": false,
     "discPrice": "",
     "stock": "",
