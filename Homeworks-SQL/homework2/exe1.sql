@@ -9,8 +9,8 @@ SELECT * FROM artist_details
 WHERE country = 'Germany';
 
 --Show all songs longer than 4 minutes
-SELECT * FROM artist_details 
-WHERE country = 'Germany';
+SELECT * FROM song
+WHERE duration > '00:04:00' ;
 
 --Show all explicit songs
 SELECT * FROM song
