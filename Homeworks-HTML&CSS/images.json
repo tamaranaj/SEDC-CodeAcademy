@@ -8,7 +8,7 @@
     "price": 20,
     "onDiscount": false,
     "discPrice": null,
-    "stock": 1,
+    "stock": true,
     "imageUrl": "../images/acrylic/6.png"
     
 
@@ -23,7 +23,7 @@
     "price": 30,
     "onDiscount": false,
     "discPrice": null,
-    "stock": 1,
+    "stock": true,
     "imageUrl": "../images/acrylic/1.jpg"
 },
 {
@@ -36,7 +36,7 @@
     "price": 20,
     "onDiscount": true,
     "discPrice": 15,
-    "stock": 1,
+    "stock": true,
     "imageUrl": "../images/acrylic/2.jpg"
 },
 {
@@ -49,7 +49,7 @@
     "price": 25,
     "onDiscount": true,
     "discPrice": 22,
-    "stock": 1,
+    "stock": false,
     "imageUrl": "../images/acrylic/3.jpg"
 },
 {
@@ -62,7 +62,7 @@
     "price": 30,
     "onDiscount": false,
     "discPrice": null,
-    "stock": 1,
+    "stock": false,
     "imageUrl": "../images/acrylic/4.jpg"
 },
 {
