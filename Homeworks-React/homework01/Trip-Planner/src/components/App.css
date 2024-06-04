@@ -1,0 +1,12 @@
+main{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+

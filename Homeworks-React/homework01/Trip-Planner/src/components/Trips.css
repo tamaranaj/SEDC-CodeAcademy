@@ -1,0 +1,14 @@
+
+.trips-list{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.trip{
+    list-style-type: disc;
+}
+.trip:hover{
+    font-size: larger;
+    color: red;
+}
