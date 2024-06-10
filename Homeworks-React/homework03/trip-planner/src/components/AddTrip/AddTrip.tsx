@@ -38,7 +38,7 @@ export const AddTrip =({trips }: AddTripProps)=>{
                 <label htmlFor="budget">Budget:</label>
                     <input type="text" name="budget" id="budget" value={budget} onChange={(event)=>{setBudget(event.target.value)}}  />
                 <label htmlFor="image">Image:</label>
-                    <input type="file" name="image" id="image" value={image} onChange={(event)=>{setImage(event.target.value)}} />
+                    <input type="text" name="image" id="image" value={image} onChange={(event)=>{setImage(event.target.value)}} />
 
                 <button onClick={(event: React.MouseEvent<HTMLButtonElement>)=>click(event)}>Create Trip</button>
             </form>
