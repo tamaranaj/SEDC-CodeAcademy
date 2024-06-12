@@ -10,7 +10,7 @@ export const UserDetails = ()=>{
         from: "somewhere"
     }
     return(
-        <ul className="display" style={theme == "black" ? {color: "white"} : {color: "black"}}>
+        <ul className="display" style={theme == "black" ? {color: "white"} : {color: "blue"}}>
             {Object.values(user).map(val=>(<li key={val}>{val}</li>))}
         </ul>
     )

@@ -25,7 +25,7 @@ export const ThemeContextProvider = ({ children }: ThemeContextProviderProps)=> 
 
     function handleClick(){
         theme == ThemeColor.dark ? setTheme(ThemeColor.light) : setTheme(ThemeColor.dark)
-        console.log(theme)
+        
     }
 
     return(
