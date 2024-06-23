@@ -1,0 +1,29 @@
+.card{
+    width: 390px;   
+    border: double 2px white;
+    border-radius: 2%;
+    box-shadow: -5px -1px 5px 0px;
+    padding: 15px;
+   
+    
+}
+.wrap-paragraphs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;    
+}
+button{
+    background-color:rgba(10, 66, 22, 0.411);
+    cursor: pointer;
+}
+.cardImg{
+    width: 250px;
+}
+.cardInfo{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2em;
+}

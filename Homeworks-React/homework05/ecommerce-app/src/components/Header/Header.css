@@ -1,0 +1,40 @@
+.headerContainer{
+    background-color: rgba(10, 66, 22, 0.826);
+    padding: 0px 100px;
+}
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-list{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    list-style-type: none;
+    
+}
+.nav-list a{
+    font-size: 1.4em;
+    color: black;
+    width: 600;
+    text-decoration: none;
+}
+
+a:hover, .active{
+    font-weight: 600;
+    font-style: italic;  
+    
+}
+
+.logo{
+    width: 70px;
+    display: flex;
+    align-items: center;
+
+}

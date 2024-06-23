@@ -1,0 +1,30 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    align-items: center;
+    margin: 60px 10px;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 600px;
+    border: 3px solid green;
+}
+input, select{
+    margin:5px;
+    padding: 10px;
+    width: 500px;
+}
+button{
+    width: 70px;
+    border-radius: 5px;
+    margin:5px;
+    padding: 10px;
+}

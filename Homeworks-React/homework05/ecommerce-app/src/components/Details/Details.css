@@ -1,0 +1,34 @@
+.details-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    max-width: 80%;
+    height: 450px;
+    margin-top: 40px;
+}
+
+.details-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    gap: 15px;
+    margin: 30px;
+
+}
+
+.product {
+    max-width: 500px;
+    height: 400px;
+}
+p{
+   margin: 10px;
+}
