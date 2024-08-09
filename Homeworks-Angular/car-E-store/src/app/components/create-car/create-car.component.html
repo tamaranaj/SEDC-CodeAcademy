@@ -1,0 +1,206 @@
+<section class="formContainer">
+  <div class="form">
+    <h3>Add new car</h3>
+    <div class="cont">
+      <fieldset>
+        <div class="row">
+          <label for="brand">Brand:</label>
+          <select [(ngModel)]="car.brand" id="brand" name="brand">
+            <option value="Opel">Opel</option>
+            <option value="Honda">Honda</option>
+            <option value="Fiat">Fiat</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Abarth">Abarth</option>
+            <option value="Audi">Audi</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Ford">Ford</option>
+            <option value="Cadillac">Cadillac</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Dodge">Dodge</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Mitsubishi">Mitsubishi</option>
+            <option value="Subaru">Subaru</option>
+            <option value="Suzuki">Suzuki</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label for="model">Model:</label>
+          <input
+            type="text"
+            [(ngModel)]="car.model"
+            placeholder="Enter model"
+            name="model"
+            id="model"
+          />
+        </div>
+
+        <div class="row">
+          <label for="price">Price:</label>
+          <input
+            type="number"
+            [(ngModel)]="car.price"
+            id="price"
+            min="1000"
+            placeholder="Enter price"
+            name="price"
+          />
+        </div>
+
+        <div class="row">
+          <label for="description">Description:</label>
+          <input
+            type="text"
+            [(ngModel)]="car.description"
+            placeholder="Enter car description"
+            name="description"
+            id="description"
+          />
+        </div>
+
+        <div class="row">
+          <label for="image">ImageURL:</label>
+          <input
+            type="text"
+            [(ngModel)]="car.images[0]"
+            placeholder="Add image"
+            id="image"
+          />
+        </div>
+
+        <div class="row">
+          <label for="fuel">Fuel:</label>
+          <select [(ngModel)]="car.fuelType" id="fuel" name="fuel">
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Diesel</option>
+            <option value="Electric">Electric</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label for="carType">Type:</label>
+          <select [(ngModel)]="car.type" id="carType" name="type">
+            <option value="Sedan">Sedan</option>
+            <option value="SUV">SUV</option>
+            <option value="Coupe">Coupe</option>
+            <option value="Hatchback">Hatchback</option>
+            <option value="Convertible">Convertible</option>
+            <option value="Truck">Truck</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="row">
+          <label for="year">Year:</label>
+          <input
+            type="number"
+            [(ngModel)]="car.year"
+            id="year"
+            min="1940"
+            placeholder="Enter year"
+            name="year"
+          />
+        </div>
+
+        <div class="row">
+          <label for="color">Color:</label>
+          <input
+            type="text"
+            [(ngModel)]="car.color"
+            placeholder="Enter color"
+            name="color"
+            id="color"
+          />
+        </div>
+
+        <div class="row">
+          <label for="distance">Distance:</label>
+          <input
+            type="number"
+            [(ngModel)]="car.distance"
+            id="distance"
+            min="5000"
+            placeholder="Enter distance"
+            name="distance"
+          />
+        </div>
+        <div class="row">
+          <label for="engine">Power:</label>
+          <input
+            type="number"
+            [(ngModel)]="car.enginePower"
+            id="engine"
+            min="50"
+            placeholder="Enter engin power"
+            name="engin"
+          />
+        </div>
+        <div class="row">
+          <label for="doors">Doors:</label>
+          <input
+            type="number"
+            [(ngModel)]="car.doors"
+            id="doors"
+            min="1"
+            placeholder="Enter no. of doors"
+            name="doors"
+          />
+        </div>
+        <div class="row">
+          <label for="seats">Seats:</label>
+          <input
+            type="number"
+            [(ngModel)]="car.seats"
+            id="seats"
+            min="1"
+            placeholder="Enter no. of seats"
+            name="seats"
+          />
+        </div>
+
+        <div class="row">
+          <label for="transmission">Transmission:</label>
+          <input
+            type="text"
+            [(ngModel)]="car.transmission"
+            id="transmission"
+            placeholder="Enter transmission"
+            name="transmission"
+          />
+        </div>
+      </fieldset>
+    </div>
+
+    <fieldset>
+      <p>Old or New car:</p>
+      <div class="radio">
+        <input
+          type="radio"
+          name="radio"
+          [value]="false"
+          class="oldnew"
+          [(ngModel)]="car.isNew"
+          name="old"
+        />
+        <p>Old</p>
+      </div>
+
+      <div class="radio">
+        <input
+          type="radio"
+          name="radio"
+          [value]="true"
+          class="oldnew"
+          [(ngModel)]="car.isNew"
+          name="new"
+        />
+        <p>New</p>
+      </div>
+    </fieldset>
+
+    <button class="create" (click)="handleAddNewCar()">Create new car</button>
+  </div>
+</section>

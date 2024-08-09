@@ -1,0 +1,14 @@
+<section class="card-container">
+  <div class="image">
+    <img [src]="carDetails().images[0]" />
+  </div>
+  <div class="details">
+    <h4>{{ carDetails().brand }} {{ carDetails().model }}</h4>
+    <p>Year: {{ carDetails().year }}</p>
+    <p>Price:{{ carDetails().price }}</p>
+    <div class="buttons">
+      <button>Details</button>
+      <button>Test drive</button>
+    </div>
+  </div>
+</section>

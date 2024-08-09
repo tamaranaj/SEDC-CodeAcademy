@@ -1,0 +1,15 @@
+<main>
+  <app-header [title]="title" />
+  <app-dealership-info [founded]="founded" [description]="description" />
+  <app-car [cars]="carsArray()" />
+
+  <br />
+  @if(showFrom()){ <app-create-car [cars]="carsArray()" />}@else {
+  <div class="add">
+    <button class="addBtn" style="display: flex" (click)="handleShowFrom()">
+      Add new car
+    </button>
+  </div>
+
+  }
+</main>
