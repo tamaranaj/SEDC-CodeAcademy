@@ -1,0 +1,25 @@
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+li{
+    
+    list-style: none;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+li:hover{
+    text-decoration: underline;
+}

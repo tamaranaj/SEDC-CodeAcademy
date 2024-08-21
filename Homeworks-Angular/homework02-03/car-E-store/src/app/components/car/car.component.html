@@ -1,0 +1,42 @@
+<div class="filters">
+  <input
+    type="text"
+    placeholder="Search by brand"
+    (keyup)="handleInputChange($event)"
+    class="searchBrand"
+  />
+  <div>
+    <label for="range">From price:</label>
+    <input
+      class="range"
+      type="range"
+      id="range"
+      min="9000"
+      [max]="toPrice()"
+      step="7000"
+      (change)="handleFromPrice($event, this.fromPrice)"
+    />
+    <span>{{ fromPrice() }}</span>
+  </div>
+  <div>
+    <label for="range2">To price:</label>
+    <input
+      class="range"
+      type="range"
+      id="range2"
+      [min]="fromPrice()"
+      max="160000"
+      step="10000"
+      (change)="handleFromPrice($event, this.toPrice)"
+    />
+
+    <span style="color: white">{{ toPrice() }}</span>
+  </div>
+</div>
+<div class="container">
+  @for (car of carsArray() | search : searchedCar() |fromPrice : fromPrice() |
+  toPrice : toPrice(); track car.id) {
+  <app-card [carDetails]="car" />
+
+  }
+</div>

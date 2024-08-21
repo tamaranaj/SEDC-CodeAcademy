@@ -1,0 +1,29 @@
+.container{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    gap: 50px;
+   
+}
+.filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin:20px 0px;
+    color: white;
+    font-size: 1em;
+}
+label{
+    font-size: 1.2em;
+}
+.searchBrand{
+    width: 270px;
+    padding: 4px;
+    font-size: 1em;
+    
+}
+.range{
+    cursor: pointer;
+}

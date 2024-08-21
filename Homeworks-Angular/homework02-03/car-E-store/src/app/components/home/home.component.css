@@ -1,0 +1,26 @@
+.addBtn{
+    width: 100px;
+    height: 40px;
+    color: rgb(245, 235, 221);
+    background-color: rgba(74, 150, 66, 0.479);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+ }
+ 
+.container{
+     padding-bottom: 70px;
+     background-color: rgba(20, 20, 20, 0.945);
+}
+ .add{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+    
+     
+ }
