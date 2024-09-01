@@ -1,0 +1,53 @@
+<section>
+  @if(favorites.length==0){
+  <div class="empty">
+    <h3>No favorites added!</h3>
+    <p>Choose your favorites and come back!</p>
+  </div>
+  } @else{
+
+  <div class="tableContainer">
+    <h5>List of your favorites:</h5>
+    <table mat-table [dataSource]="favorites">
+      <ng-container matColumnDef="Brand">
+        <th mat-header-cell *matHeaderCellDef>Brand</th>
+        <td mat-cell *matCellDef="let element">{{ element.brand }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="Model">
+        <th mat-header-cell *matHeaderCellDef>Model</th>
+        <td mat-cell *matCellDef="let element">{{ element.model }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="Year">
+        <th mat-header-cell *matHeaderCellDef>Year</th>
+        <td mat-cell *matCellDef="let element">{{ element.year }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="Price">
+        <th mat-header-cell *matHeaderCellDef>Price</th>
+        <td mat-cell *matCellDef="let element">{{ element.price }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="Location">
+        <th mat-header-cell *matHeaderCellDef>Location</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.location.city }}, {{ element.location.country }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Remove">
+        <th mat-header-cell *matHeaderCellDef>Remove from list</th>
+        <td mat-cell *matCellDef="let element">
+          <button mat-button (click)="handleRemoveFromList(element)">
+            Remove
+          </button>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+
+  }
+</section>

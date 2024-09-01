@@ -1,0 +1,53 @@
+<mat-card class="card" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image">
+      <img src="logo.png" alt="logo" width="100%" class="logo" />
+    </div>
+    <mat-card-title>{{ car().brand }} {{ car().model }}</mat-card-title>
+    <mat-card-subtitle>{{ car().price | currency : "EUR" }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    [src]="car().images[0]"
+    [alt]="car().model"
+    width="100%"
+    height="auto"
+  />
+  <mat-card-content>
+    <p class="description">{{ car().description }}</p>
+    <mat-card-actions>
+      <button
+        mat-fab
+        aria-label=" icon button with a heart icon"
+        class="favoriteBtn"
+        (click)="handleAddFavorites(car())"
+      >
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card-content>
+
+  <mat-accordion class="detailsContainer">
+    <mat-expansion-panel
+      (opened)="handleAccordion(true)"
+      (closed)="handleAccordion(false)"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title> See car details </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-chip-set aria-label="car details">
+        <mat-chip class="chips">Year: {{ car().year }}</mat-chip>
+        <mat-chip class="chips">Car type: {{ car().type }}</mat-chip>
+        <mat-chip class="chips">Engine power: {{ car().enginePower }}</mat-chip>
+        <mat-chip class="chips">Fuel type:{{ car().fuelType }}</mat-chip>
+        <mat-chip class="chips"
+          >Transmission: {{ car().transmission }}</mat-chip
+        >
+        <mat-chip class="chips">No. of seats: {{ car().seats }}</mat-chip>
+        <mat-chip
+          >Location: {{ car().location.city }}, {{ car().location.country }}
+        </mat-chip>
+      </mat-chip-set>
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-card>

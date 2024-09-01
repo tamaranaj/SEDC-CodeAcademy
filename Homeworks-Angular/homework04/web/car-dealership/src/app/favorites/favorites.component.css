@@ -1,0 +1,30 @@
+.empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+.tableContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px;
+    padding: 40px;
+    border: 3px solid black;
+    width: 60%;
+    
+}
+
+mat-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
