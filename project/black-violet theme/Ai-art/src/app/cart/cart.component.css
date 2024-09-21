@@ -1,0 +1,12 @@
+.container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+
+}
+
+.stepper{
+    box-shadow: 0 0 10px rgba(220, 210, 210, 0.507);
+    border-radius: 15px;
+}

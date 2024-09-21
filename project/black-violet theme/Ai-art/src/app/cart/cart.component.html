@@ -1,0 +1,28 @@
+@switch (stepperOrientation | async) { @case ('horizontal') { } @case
+('vertical') { } }
+
+<div class="container">
+  <mat-stepper
+    [orientation]="(stepperOrientation | async)!"
+    #stepper
+    class="stepper"
+  >
+    <mat-step label="Check your products">
+      <app-cart-table />
+      <div>
+        <button mat-flat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+
+    <mat-step>
+      <ng-template matStepLabel>Checkout</ng-template>
+      <app-cart-form />
+      <div>
+        <button mat-flat-button matStepperPrevious type="button">Back</button>
+        <!-- <button mat-button (click)="stepper.reset()">
+          Back to your products
+        </button> -->
+      </div>
+    </mat-step>
+  </mat-stepper>
+</div>

@@ -1,0 +1,14 @@
+.navList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.navItem{
+    list-style-type: none;
+}
+.navItem a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+}

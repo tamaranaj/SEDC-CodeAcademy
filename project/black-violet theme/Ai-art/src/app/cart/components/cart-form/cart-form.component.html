@@ -1,0 +1,115 @@
+<div class="container">
+  <div class="content">
+    <section class="info">
+      <p class="paymentDetails">
+        Get unique arts before they are not sold to somebody else. Fill the form
+        with your information and we will send you the art and certificate!
+      </p>
+    </section>
+
+    <div class="error-msg">
+      <p>{{ formUntouched() }}</p>
+    </div>
+
+    <form
+      class="checkoutInfo"
+      [formGroup]="checkout"
+      (ngSubmit)="checkoutSubmit()"
+    >
+      <div class="row">
+        <mat-form-field>
+          <mat-icon color="primary" dense matPrefix>person_outline</mat-icon>
+          <mat-label>Cardholder name</mat-label>
+          <input
+            matInput
+            type="text"
+            placeholder="Jane Doe"
+            formControlName="fullName"
+            required
+          />
+          @if (checkout.get('fullName')?.hasError &&
+          checkout.get('fullName')?.hasError('required')){
+          <mat-error>Cardholder name is <strong>required</strong></mat-error>
+          } @if(checkout.get('fullName')?.hasError('pattern')){
+          <mat-error>Enter a valid name</mat-error>
+          }
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-icon color="primary" dense matPrefix>mail</mat-icon>
+          <mat-label>E-mail</mat-label>
+          <input
+            matInput
+            type="email"
+            placeholder="mail@example.com"
+            formControlName="email"
+            required
+          />
+          @if (checkout.get('email')?.hasError('pattern') &&
+          !checkout.get('email')?.hasError('required')) {
+          <mat-error>Please enter a valid email address</mat-error>
+          } @if (checkout.get('email')?.hasError('required')) {
+          <mat-error>Email is <strong>required</strong></mat-error>
+          }
+        </mat-form-field>
+      </div>
+      <mat-form-field class="card">
+        <mat-icon matPrefix dense color="primary">payment</mat-icon>
+        <mat-label>Card number</mat-label>
+        <input
+          matInput
+          type="tel"
+          #cardNumber
+          placeholder="0123 4567 8910 1112"
+          formControlName="cardNo"
+          required
+        />
+        <mat-hint align="end" class="hint"
+          >{{ cardNumber.value.length }} / 16</mat-hint
+        >
+        @if(checkout.get('cardNo')?.hasError('required')){
+        <mat-error>Card number is <strong>required</strong></mat-error>
+        }
+
+        <mat-error>{{ cardNoError() }}</mat-error>
+      </mat-form-field>
+      <div class="row">
+        <mat-form-field>
+          <mat-icon matPrefix dense color="primary">calendar_month</mat-icon>
+          <mat-label>Expire date</mat-label>
+
+          <input
+            type="text"
+            matInput
+            placeholder="04/25"
+            required
+            formControlName="cardDate"
+          />
+          @if(checkout.get('cardDate')?.hasError('pattern')){
+          <mat-error>Card expired date is invalid</mat-error>
+          } @if(checkout.get('cardDate')?.hasError('required')){
+          <mat-error>Card expired date is <strong>required</strong></mat-error>
+          }
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Security code</mat-label>
+          <input
+            matInput
+            type="text"
+            placeholder="123"
+            formControlName="cvvNo"
+            required
+          />
+          @if(checkout.get('cvvNo')?.hasError('pattern')){
+          <mat-error>Security code is invalid</mat-error>
+          } @if(checkout.get('cvvNo')?.hasError('required')){
+          <mat-error>Security code is <strong>required</strong></mat-error>
+          }
+        </mat-form-field>
+      </div>
+
+      <button mat-flat-button [disabled]="checkout.invalid">Purchase</button>
+    </form>
+  </div>
+</div>

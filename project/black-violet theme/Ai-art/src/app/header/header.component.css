@@ -1,0 +1,43 @@
+header{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+.first, .second{
+    
+    color: white;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding: 0px 30px
+}
+.first input{
+    width: 30%;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 4px double black;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.example-icon a mat-icon{
+    color: white;
+    cursor: pointer;
+}
+
+

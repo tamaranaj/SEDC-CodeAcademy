@@ -1,0 +1,49 @@
+
+.container{
+    margin: 10px 30px 10px 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: white;
+      
+}
+.tableContainer{
+    width: 80%;
+}
+.tableHeader{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: white;
+}
+.image{
+    width: 100px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heading{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    color:white;
+    
+}
+
+.containerEmpty{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerTotal{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

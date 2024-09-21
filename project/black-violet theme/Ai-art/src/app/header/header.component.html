@@ -1,0 +1,47 @@
+<header>
+  <mat-toolbar class="first">
+    <div class="logo">
+      <img src="art-whiteTxt.png" alt="logo" width="80" /> <span>Ai-Art</span>
+    </div>
+
+    <input type="text" placeholder="Search art.." />
+
+    <div class="btns">
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="icon-button with heart icon"
+      >
+        <a routerLink="/favorites" routerLinkActive="active"
+          ><mat-icon aria-hidden="false" [matBadge]="productInCart()"
+            >favorite</mat-icon
+          ></a
+        >
+      </button>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="icon-button with shopping-cart icon"
+      >
+        <a routerLink="/cart" routerLinkActive="active"
+          ><mat-icon aria-hidden="false" [matBadge]="productInFavorites()"
+            >shopping_cart</mat-icon
+          ></a
+        >
+      </button>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="icon-button with person icon"
+      >
+        <a routerLink="/" routerLinkActive="active"
+          ><mat-icon>person</mat-icon></a
+        >
+      </button>
+    </div>
+  </mat-toolbar>
+
+  <mat-toolbar class="second">
+    <app-navbar />
+  </mat-toolbar>
+</header>

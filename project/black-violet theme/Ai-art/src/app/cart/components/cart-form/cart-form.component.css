@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    width: 50%;
+    border: 3px solid pink;
+    border-radius: 5%;
+    font-family: "Inconsolata", monospace, Roboto, "Helvetica Neue", sans-serif;
+    background: linear-gradient(to top, #000 5%, #47335e 100%) content-box;
+    
+}
+.checkoutInfo{
+    margin: 20px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    
+    
+}
+
+.error-msg{
+    display: flex;
+    justify-content: center;
+    color: #F2A08F;
+    font-size: 1.2em;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.paymentDetails{
+    padding: 10px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    color:white;
+    font-size: 1em;
+}
+.hint{
+    color:#F29EE7;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card{
+    width: 70%;
+}
+
+.content:hover,
+  .content:focus-within {
+      transform: scale(1.02);
+      transition: transform 500ms ease-in;
+      box-shadow:1px 2px 4px #9a89a9, 0 0 20px #cac3d16c, 0 0 5px #9b6dc9;
+  }
